@@ -33,6 +33,13 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -53,6 +60,8 @@ section{
 
 .navbar{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -83,15 +92,14 @@ section{
 .flags-container img{
     display: block;
     width: 30px;
-    padding: 1px;
 }
 /* ¿? */
-.navbar .flags-container:nth-child(7){
+.navbar .flags-container:nth-child(6){
     margin-left: 1rem;
 }
 
-.navbar a:nth-child(5){
-    margin-right: 4rem;
+.navbar a:nth-child(4){
+    margin-right: 3rem;
 }
 
 .navbar a{
@@ -278,6 +286,7 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
 }
 
 .certificates-box img{
@@ -317,8 +326,6 @@ span{
     transition: .5s ease;
 }
 
-
-
 /* Services Section Styles */
 
 .services{
@@ -326,7 +333,7 @@ span{
 }
 
 .services h2{
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .services-container{
@@ -379,8 +386,10 @@ span{
     margin: 1rem 0 3rem;
 }
 
+/* Portfolio Section Styles */
+
 .portfolio{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     user-select: none;
 }
 
@@ -408,7 +417,7 @@ span{
     transition: .5s ease;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover .bgn{
     transform: scale(1.1);
 }
 
@@ -418,7 +427,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .6), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,11 +444,14 @@ span{
 
 .portfolio-layer h4{
     font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 .portfolio-layer p{
+    font-weight: 700;
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 .portfolio-layer a{
@@ -450,12 +462,55 @@ span{
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    margin: 0 1rem;
 }
 
 .portfolio-layer a i{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--second-bg-color);
 }
+
+.links-container{
+    margin: 1rem 0;
+}
+
+.techs-used-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 3rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.tech-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: 1rem;
+    background: var(--second-bg-color);
+}
+
+.tech-item img{
+    width: 18%;
+    margin-right: 1rem;
+}
+
+.tech-item:nth-child(3) img{
+    width: 14%;
+    margin-right: 1rem;
+}
+
+.tech-name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+
 
 /* Contact Section Styles */
 

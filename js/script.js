@@ -42,14 +42,7 @@ window.onscroll = () => {
 
 /*==================== Scroll Reveal ====================*/
 
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
-
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top', reset:true, distance:'80px', delay:200, duration:2000 });
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
