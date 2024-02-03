@@ -226,6 +226,10 @@ span{
     font-size: 4.5rem;
 }
 
+/* .cv{
+    padding: .5rem 2rem;
+} */
+
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -236,8 +240,8 @@ span{
 }
 
 .about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 2rem;
+    font-size: 1.5rem;
+    margin: 2rem 0 1.5rem;
 }
 
 .skills-title h2{
