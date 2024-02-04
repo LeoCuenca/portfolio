@@ -52,25 +52,25 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', rese
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 
-ScrollReveal().reveal('.tech:nth-child(2)', { origin: 'bottom', reset:true, distance:'100px', delay:200, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(3)', { origin: 'top', reset:true, distance:'100px', delay:400, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(4)', { origin: 'bottom', reset:true, distance:'100px', delay:600, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(5)', { origin: 'top', reset:true, distance:'100px', delay:800, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(6)', { origin: 'bottom', reset:true, distance:'100px', delay:1000, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(7)', { origin: 'top', reset:true, distance:'100px', delay:1200, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(8)', { origin: 'bottom', reset:true, distance:'100px', delay:1400, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(9)', { origin: 'top', reset:true, distance:'100px', delay:1600, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(10)', { origin: 'bottom', reset:true, distance:'100px', delay:1800, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(11)', { origin: 'top', reset:true, distance:'100px', delay:2000, duration:1000 });
-ScrollReveal().reveal('.tech:nth-child(12)', { origin: 'bottom', reset:true, distance:'100px', delay:2200, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(2)', { origin: 'bottom', reset:true, distance:'100px', delay:100, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(3)', { origin: 'top', reset:true, distance:'100px', delay:200, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(4)', { origin: 'bottom', reset:true, distance:'100px', delay:300, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(5)', { origin: 'top', reset:true, distance:'100px', delay:400, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(6)', { origin: 'bottom', reset:true, distance:'100px', delay:500, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(7)', { origin: 'top', reset:true, distance:'100px', delay:600, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(8)', { origin: 'bottom', reset:true, distance:'100px', delay:700, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(9)', { origin: 'top', reset:true, distance:'100px', delay:800, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(10)', { origin: 'bottom', reset:true, distance:'100px', delay:900, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(11)', { origin: 'top', reset:true, distance:'100px', delay:1000, duration:1000 });
+ScrollReveal().reveal('.tech:nth-child(12)', { origin: 'bottom', reset:true, distance:'100px', delay:1100, duration:1000 });
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 ScrollReveal().reveal('.skills-title h2', { origin: 'right', reset:true, distance:'100px', delay:400, duration:1000 });
-ScrollReveal().reveal('.certificates-title h2', { origin: 'left', reset:true, distance:'100px', delay:2400, duration:1000 });
+ScrollReveal().reveal('.certificates-title h2', { origin: 'left', reset:true, distance:'100px', delay:1200, duration:1000 });
 
-ScrollReveal().reveal('.certificates-box:nth-child(2)', { origin: 'left', reset:true, distance:'100px', delay:2600, duration:1000 });
-ScrollReveal().reveal('.certificates-box:nth-child(3)', { origin: 'left', reset:true, distance:'100px', delay:2800, duration:1000 });
-ScrollReveal().reveal('.certificates-box:nth-child(4)', { origin: 'left', reset:true, distance:'100px', delay:3000, duration:1000 });
+ScrollReveal().reveal('.certificates-box:nth-child(2)', { origin: 'left', reset:true, distance:'100px', delay:1300, duration:1000 });
+ScrollReveal().reveal('.certificates-box:nth-child(3)', { origin: 'left', reset:true, distance:'100px', delay:1400, duration:1000 });
+ScrollReveal().reveal('.certificates-box:nth-child(4)', { origin: 'left', reset:true, distance:'100px', delay:1500, duration:1000 });
 
 /*==================== Typed JS ====================*/
 
