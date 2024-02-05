@@ -1,0 +1,32 @@
+{
+    "navbar":{
+        "home": "Inicio",
+        "aboutNav": "Sobre mi",
+        "contact": "Contacto"
+    },
+
+    "home":{
+        "hi": "Hola, soy",
+        "description": "Soy un apasionado desarrollador, con una solida experiencia en diferentes lenguajes, asi como en diferentes ámbitos. Actualmente me encuentro en busca de mi primera experiencia laboral en el mundo del desarrollo.",
+        "read": "Leer mas"
+    },
+
+    "about":{
+        "aboutTitle": "Sobre",
+        "me": " Mi",
+        "p1": "He desarrollado toda mi vida profesional en ámbitos administrativos, hasta que decidí en 2020, dar un giro a mi vida y empezar a estudiar algo que realmente siempre me gusto y me llamo la atención, que es la programación en general.",
+        "p2": "Actualmente me encuentro a 7 materias de recibirme de Técnico Universitario en Programación en la Universidad Tecnológica Nacional.",
+        "p3": "Me caracterizo por ser una persona perseverante ante cualquier desafío en el ámbito laboral, tratando siempre de dar soluciones a los problemas planteados.",
+        "cv": "Descargar CV",
+        "tech": "Tecnologías",
+        "certs": "Certificaciones",
+        "wide": "Ver",
+        "pc": "Armado y Reparación de PC"
+    },
+
+    "portfolio":{
+        "some": "Algunos",
+        "projects": " Projectos",
+        "projDescription": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual."
+    }
+}

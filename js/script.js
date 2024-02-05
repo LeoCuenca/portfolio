@@ -42,8 +42,8 @@ window.onscroll = () => {
 
 /*==================== Scroll Reveal ====================*/
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
+ScrollReveal().reveal('.home-content, .title-container', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
+ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
 
@@ -76,8 +76,51 @@ ScrollReveal().reveal('.certificates-box:nth-child(4)', { origin: 'left', reset:
 
 const typed = new Typed('.multiple-text',{
     strings: ['Técnico Universitario en Programación', 'Frontend Developer', 'Software Developer'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 1000,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 1500,
     loop: true
 });
+
+/*==================== Language Selection ====================*/
+
+const flagsElement = document.getElementById("flags");
+
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for (const textToChange of textsToChange){
+        const section =textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+};
+
+flagsElement.addEventListener("click", (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+});
+
+/*==================== Language Selection Gray Flag====================*/
+
+var flagSpain = document.getElementById('spanish');
+var flagUsa = document.getElementById('english');
+
+  // Agrega listeners para el evento click a ambos botones
+  flagSpain.addEventListener('click', function () {
+    // Alternar clases para cambiar el estado
+    flagSpain.classList.remove('gray');
+    flagUsa.classList.toggle('gray');
+  });
+
+  flagUsa.addEventListener('click', function () {
+    // Alternar clases para cambiar el estado
+    flagSpain.classList.toggle('gray');
+    flagUsa.classList.remove('gray');
+  });
+
+
+

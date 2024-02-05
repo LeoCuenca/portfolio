@@ -1,0 +1,32 @@
+{
+    "navbar":{
+        "home": "Home",
+        "aboutNav": "About Me",
+        "contact": "Contact"
+    },
+
+    "home":{
+        "hi": "Hi, I'm",
+        "description": "Passionate developer, with solid experience in different languages, as well as in different areas. I'm currently looking for my first work experience in the world of development.",
+        "read": "Read More"
+    },
+
+    "about":{
+        "aboutTitle": "About",
+        "me": " Me",
+        "p1": "I have developed my entire professional life in administrative fields, until I decided in 2020 to change my life and start studying something that I have always really liked and caught my attention, which is programming in general.",
+        "p2": "I'm currently 7 subjects away from receiving a University Technician in Programming at the National Technological University.",
+        "p3": "Characterized by being a persevering person in the face of any challenge in the workplace, always trying to provide solutions to the problems raised.",
+        "cv": "Download CV",
+        "tech": "Skills",
+        "certs": "Certifications",
+        "wide": "Ver",
+        "pc": "PC Assembly And Repair"
+    },
+
+    "portfolio":{
+        "some": "Some",
+        "projects": " Projects",
+        "projDescription": "Project carried out as a final project for the subject Laboratory III, of the University Technique in Programming [UTN]. It was developed entirely individually."
+    }
+}

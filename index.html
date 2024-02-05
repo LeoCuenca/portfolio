@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonel Cuenca | Portfolio</title>
-
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- custom css -->
@@ -19,16 +18,18 @@
         <a href="#" class="logo">Portfolio</a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#about">Sobre mi</a>
+            <a href="#home" class="active" data-section="navbar" data-value="home">Inicio</a>
+            <a href="#about" data-section="navbar" data-value="aboutNav">Sobre mi</a>
             <!-- <a href="#services">Servicios</a> -->
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contacto</a>
-            <div class="flags-container" data-language="es">
-                <img src="images/spain.png" alt="">
-            </div>
-            <div class="flags-container" data-language="en">
-                <img src="images/usa.png" alt="">
+            <a href="#contact" data-section="navbar" data-value="contact">Contacto</a>
+            <div class="flags" id="flags">
+                <div class="flags-container" data-language="es">
+                    <img src="images/spain.png" alt="" id="spanish">
+                </div>
+                <div class="flags-container" data-language="en">
+                    <img src="images/usa.png" alt="" class="gray" id="english">
+                </div>
             </div>
         </nav>
     </header>
@@ -36,15 +37,15 @@
     <!-- Home Section Design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hola, soy</h3>
+            <h3 data-section="home" data-value="hi">Hola, soy</h3>
             <h1>Leonel Cuenca</h1>
             <h3><span class="multiple-text"></span></h3>
-            <p>Soy un apasionado desarrollador, con una solida experiencia en diferentes lenguajes, asi como en diferentes ámbitos. Actualmente me encuentro en busca de mi primera experiencia laboral en el mundo del desarrollo.</p>
+            <p data-section="home" data-value="description">Soy un apasionado desarrollador, con una solida experiencia en diferentes lenguajes, asi como en diferentes ámbitos. Actualmente me encuentro en busca de mi primera experiencia laboral en el mundo del desarrollo.</p>
             <div class="social-media">
                 <a href="https://github.com/LeoCuenca" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/leo-cuenca/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <a href="#about" class="btn">Leer mas</a>
+            <a href="#about" class="btn" data-section="home" data-value="read">Leer mas</a>
         </div>
         <!-- <div class="home-img">
             <img src="images/home.png" alt="home">
@@ -57,15 +58,15 @@
             <img src="images/about.png" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">Sobre <span>Mí</span></h2>
+            <h2 class="heading h-translate" data-section="about" data-value="aboutTitle">Sobre </h2><span  data-section="about" data-value="me">Mí</span>
             <!-- <h3>Frontend Developer</h3> -->
-            <p>He desarrollado toda mi vida profesional en ámbitos administrativos, hasta que decidí en 2020, dar un giro a mi vida y empezar a estudiar algo que realmente siempre me gusto y me llamo la atención, que es la programación en general.</p>
-            <p>Actualmente me encuentro a 7 materias de recibirme de Técnico Universitario en Programación en la Universidad Tecnológica Nacional. </p>
-            <p>Me caracterizo por ser una persona perseverante ante cualquier desafío en el ámbito laboral, tratando siempre de dar soluciones a los problemas planteados.</p>
-            <a href="#" class="btn cv">Descargar CV</a>
+            <p data-section="about" data-value="p1">He desarrollado toda mi vida profesional en ámbitos administrativos, hasta que decidí en 2020, dar un giro a mi vida y empezar a estudiar algo que realmente siempre me gusto y me llamo la atención, que es la programación en general.</p>
+            <p data-section="about" data-value="p2">Actualmente me encuentro a 7 materias de recibirme de Técnico Universitario en Programación en la Universidad Tecnológica Nacional.</p>
+            <p data-section="about" data-value="p3">Me caracterizo por ser una persona perseverante ante cualquier desafío en el ámbito laboral, tratando siempre de dar soluciones a los problemas planteados.</p>
+            <a href="assets/CV-Cuenca-Leonel.pdf" class="btn cv" download="CV-Cuenca-Leonel.pdf"  data-section="about" data-value="cv">Descargar CV</a>
             <div class="about-skills">
                 <div class="skills-title">
-                    <h2>Tecnologías</h2>
+                    <h2 data-section="about" data-value="tech">Tecnologías</h2>
                 </div>
                 <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" class="tech" alt="">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" class="tech" alt="">
@@ -81,25 +82,25 @@
             </div>
             <div class="certificates-container">
                 <div class="certificates-title">
-                    <h2>Certificaciones</h2>
+                    <h2 data-section="about" data-value="certs">Certificaciones</h2>
                 </div>
                 <div class="certificates-box">
                     <img src="/assets/full-stack-mini.jpg" alt="">
                     <h2>Full Stack Python</h2>
                     <p>Gob. de la Ciudad de Buenos Aires</p>
-                    <a href="#">Ver</a>
+                    <a href="#" data-section="about" data-value="wide">Ver</a>
                 </div>
                 <div class="certificates-box">
                     <img src="/assets/ingles-mini.png" alt="">
                     <h2>EFSET</h2>
                     <p>Nivel C2 - Proficient</p>
-                    <a href="#">Ver</a>
+                    <a href="#" data-section="about" data-value="wide">Ver</a>
                 </div>
                 <div class="certificates-box">
                     <img src="/assets/reparacion-mini.jpg" alt="">
                     <h2>Armado y Reparación de PC</h2>
                     <p>Universidad Tecnológica Nacional</p>
-                    <a href="#">Ver</a>
+                    <a href="#" data-section="about" data-value="wide">Ver</a>
                 </div>
             </div>
         </div>
@@ -155,16 +156,16 @@
     
     <!-- Portfolio Section Design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Algunos <span>Proyectos</span></h2>
+        <div class="title-container">
+            <h2 class="heading" data-section="portfolio" data-value="some">Algunos</h2><span data-section="portfolio" data-value="projects"> Proyectos</span>
+        </div>
         <div class="portfolio-container">
 
             <div class="portfolio-box">
                 <img src="images/portfolio1.jpg" alt="" class="bgn">
-
-
                 <div class="portfolio-layer">
                     <h1>The Witcher Fan Page</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at cum, debitis impedit sapiente, voluptas tempore rerum ab assumenda vitae laudantium exercitationem quae dicta. Laudantium?</p>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
                     <div class="links-container">
                         <a href="#"><i class='bx bxl-github'></i></a>
                         <a href="#"><i class='bx bx-link-external'></i></a>
@@ -182,32 +183,138 @@
                             <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
                             <span class="tech-name">JavaScript</span>
                         </div>
-
                     </div>
                 </div>
-
-
-            </div>
-            
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
-
-            </div>
-            
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="">
             </div>
 
             <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="">
+                <img src="images/portfolio1.jpg" alt="" class="bgn">
+                <div class="portfolio-layer">
+                    <h1>The Witcher Fan Page</h1>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="links-container">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div> 
+                    <div class="techs-used-container">
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" alt="">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" alt="">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="">
+                <img src="images/portfolio1.jpg" alt="" class="bgn">
+                <div class="portfolio-layer">
+                    <h1>The Witcher Fan Page</h1>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="links-container">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div> 
+                    <div class="techs-used-container">
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" alt="">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" alt="">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
+                <img src="images/portfolio1.jpg" alt="" class="bgn">
+                <div class="portfolio-layer">
+                    <h1>The Witcher Fan Page</h1>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="links-container">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div> 
+                    <div class="techs-used-container">
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" alt="">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" alt="">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="" class="bgn">
+                <div class="portfolio-layer">
+                    <h1>The Witcher Fan Page</h1>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="links-container">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div> 
+                    <div class="techs-used-container">
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" alt="">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" alt="">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="" class="bgn">
+                <div class="portfolio-layer">
+                    <h1>The Witcher Fan Page</h1>
+                    <p data-section="portfolio" data-value="projDescription">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="links-container">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div> 
+                    <div class="techs-used-container">
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/html5/html5-original.svg" alt="">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/css3/css3-original.svg" alt="">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/javascript/javascript-original.svg" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -215,16 +322,16 @@
 
     <!-- Contact Section Design -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <h2 class="heading">Conta<span>ctame</span></h2>
+        <form action="form.php" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="email" placeholder="Email" name="mail">
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Asunto">
+                <input type="text" placeholder="Asunto" name="asunto">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje ..."></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje ..." name="mensaje"></textarea>
             <input type="submit" value="Enviar Mensaje" class="btn">
         </form>
     </section>
