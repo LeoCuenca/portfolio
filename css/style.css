@@ -33,13 +33,6 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-#particles-js{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-}
-
 .header{
     position: fixed;
     top: 0;
@@ -197,16 +190,36 @@ span{
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     transition: .5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .btn:hover{
-    box-shadow: none;
+    color: var(--main-color);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    border-radius: 4rem;
+    left: 0;
+    background: var(--second-bg-color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .3s all;
+}
+
+.btn:hover::before{
+    width: 100%;
 }
 
 /* About Section Styles */
@@ -431,9 +444,10 @@ span{
 .portfolio-box{
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    box-shadow: 0 0 .7rem var(--main-color);
     overflow: hidden;
     display: flex;
+    border: .1px solid var(--main-color);
 }
 
 .portfolio-box img{
@@ -458,7 +472,7 @@ span{
     flex-direction: column;
     text-align: center;
     padding: 0 2rem;
-    /* transform: translateY(100%); */
+    transform: translateY(100%);
     transition: .5s ease;
 }
 
@@ -538,8 +552,23 @@ span{
     user-select: none;
 }
 
-.contact h2{
+.title-contact-container{
+    display: flex;
+    position: relative;
     margin-bottom: 3rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-contact{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+#cont-en,
+#cont-es{
+    position: absolute;
 }
 
 .contact form{
@@ -570,17 +599,43 @@ span{
     margin: .7rem 0;
 }
 
-.contact form .input-box input{
-    width: 49%;
-}
-
 .contact form textarea{
     resize: none;
 }
 
-.contact form .btn{
+#name:focus,
+#email:focus,
+#message:focus{
+    border: 2px solid var(--main-color);
+}
+
+#name::placeholder,
+#email::placeholder,
+#message::placeholder{
+    color: rgba(189, 189, 189, 0.733);
+}
+
+.input-btn{
     margin-top: 2rem;
     cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    transition: .5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.input-btn:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
 }
 
 /* Footer Design */
@@ -615,6 +670,11 @@ span{
 .footer-iconTop a i{
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+.hidden{
+    background: red;
+    display: none;
 }
 
 /* Breakpoints */

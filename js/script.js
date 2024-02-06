@@ -42,7 +42,7 @@ window.onscroll = () => {
 
 /*==================== Scroll Reveal ====================*/
 
-ScrollReveal().reveal('.home-content, .title-container', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
+ScrollReveal().reveal('.home-content, .heading, .title-container', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
 ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
@@ -95,7 +95,6 @@ const changeLanguage = async language => {
     for (const textToChange of textsToChange){
         const section =textToChange.dataset.section;
         const value = textToChange.dataset.value;
-
         textToChange.innerHTML = texts[section][value];
     }
 };
@@ -106,21 +105,42 @@ flagsElement.addEventListener("click", (e) => {
 
 /*==================== Language Selection Gray Flag====================*/
 
-var flagSpain = document.getElementById('spanish');
+var flagSpa = document.getElementById('spanish');
 var flagUsa = document.getElementById('english');
+const contactSpa = document.getElementById("cont-es");
+const contactUsa = document.getElementById("cont-en");
 
-  // Agrega listeners para el evento click a ambos botones
-  flagSpain.addEventListener('click', function () {
-    // Alternar clases para cambiar el estado
-    flagSpain.classList.remove('gray');
-    flagUsa.classList.toggle('gray');
-  });
+flagSpa.addEventListener('click', function () {
 
-  flagUsa.addEventListener('click', function () {
-    // Alternar clases para cambiar el estado
-    flagSpain.classList.toggle('gray');
-    flagUsa.classList.remove('gray');
-  });
+    if (flagSpa.classList.contains('gray')) {
+        flagSpa.classList.remove('gray');
+        flagUsa.classList.toggle('gray');
+    }
+
+    if (contactSpa.classList.contains('hidden')) {
+        contactSpa.classList.remove('hidden');
+        contactUsa.classList.toggle('hidden');
+    }
+
+});
+
+flagUsa.addEventListener('click', function () {
+
+    if (flagUsa.classList.contains('gray')) {
+        flagUsa.classList.remove('gray');
+        flagSpa.classList.toggle('gray');
+    }
+
+    if (contactUsa.classList.contains('hidden')) {
+        contactUsa.classList.remove('hidden');
+        contactSpa.classList.toggle('hidden');
+    }
+
+});
+
+  
+
+
 
 
 
