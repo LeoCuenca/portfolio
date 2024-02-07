@@ -21,6 +21,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 body{
@@ -34,21 +35,22 @@ section{
 }
 
 .header{
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
     background: var(--bg-color);
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 999;
     user-select: none;
 }
 
 .header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
+
 }
 
 .navbar{
@@ -226,12 +228,10 @@ span{
 
 .about{
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
     user-select: none;
+    background: var(--second-bg-color);
     padding-top: 5rem;
 }
 
@@ -250,11 +250,10 @@ span{
 
 .cv{
     margin-top: 1rem;
-    padding: .5rem 2rem;
+    padding: .8rem 2rem;
 }
 
 .about-content h2{
-    text-align: left;
     line-height: 1.2;
 }
 
@@ -416,8 +415,12 @@ span{
 /* Portfolio Section Styles */
 
 .portfolio{
-    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     user-select: none;
+    flex-direction: column;
+    background: var(--bg-color);
 }
 
 .title-container{
@@ -442,21 +445,17 @@ span{
 }
 
 .portfolio-box{
+    display: flex;
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 .7rem var(--main-color);
     overflow: hidden;
-    display: flex;
     border: .1px solid var(--main-color);
 }
 
 .portfolio-box img{
     width: 100%;
     transition: .5s ease;
-}
-
-.portfolio-box:hover .bgn{
-    transform: scale(1.1);
 }
 
 .portfolio-layer{
@@ -549,7 +548,10 @@ span{
 /* Contact Section Styles */
 
 .contact{
+    display: flex;
+    flex-direction: column;
     user-select: none;
+    background: var(--second-bg-color);
 }
 
 .title-contact-container{
@@ -594,7 +596,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -646,7 +648,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer p{
@@ -673,7 +675,6 @@ span{
 }
 
 .hidden{
-    background: red;
     display: none;
 }
 
@@ -684,8 +685,21 @@ span{
         font-size: 55%;
     }
 
+    .about-content p{
+        font-size: 1.5rem;
+    }
+
     .tech{
         width: 8%;
+    }
+
+    .header{
+        width: 100vw;
+    }
+
+    .portfolio-container{
+        gap: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
@@ -693,6 +707,10 @@ span{
 @media (max-width: 991px){
     .header{
         padding: 2rem 3%;
+    }
+
+    .about{
+        flex-direction: column;
     }
     
     section{
@@ -719,10 +737,6 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
-    }
-
-    .header{
-        width: 100%;
     }
 
     .navbar{
@@ -765,11 +779,11 @@ span{
     }
 
     .about{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .about-img img{
-        width: 70vw;
+        width: 50vw;
         margin-top: 4rem;
     }
 
@@ -782,7 +796,10 @@ span{
     }
 
     .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
+    }
+    .portfolio-container{
+        width: 80%;
     }
 
 }
@@ -805,8 +822,23 @@ span{
         font-size: 50%;
     }
 
-    .contact form .input-box input{
-        width: 100%;
+
+    .certificates-container .certificates-box:nth-child(2),
+    .certificates-container .certificates-box:nth-child(3),
+    .certificates-container .certificates-box:nth-child(4){
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 70%;
+        place-items: center;
+        justify-self: center;
+    }
+
+    .tech{
+        width: 12%;
+    }
+
+    .title-container span{
+        font-size: 24.8px;
     }
 
     .footer{

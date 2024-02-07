@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emular Evento Touch</title>
+</head>
+<body>
+
+<div id="miElemento" style="width: 100px; height: 100px; background-color: red;"></div>
+
+<script>
+// Función para simular un evento táctil en un elemento específico
+function simularEventoTactil(elemento) {
+    // Crear un nuevo evento táctil
+    var eventoTactil = new TouchEvent('touchstart', {
+        bubbles: true,
+        cancelable: true,
+        // Puedes configurar más propiedades del evento táctil según sea necesario
+    });
+
+    // Despachar el evento táctil en el elemento
+    elemento.dispatchEvent(eventoTactil);
+}
+
+// Obtener el elemento en el que deseas simular el evento táctil
+var miElemento = document.getElementById('miElemento');
+
+// Simular un evento táctil cuando se carga la página
+window.onload = function() {
+    simularEventoTactil(miElemento);
+};
+</script>
+
+</body>
+</html>

@@ -52,6 +52,8 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', rese
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 
+// HACER UNA RESTRICCION PARA MOVIL QUE LOS PROYECTOS Y ALGUNOS HEADERS NO SE <ACTIVEN></ACTIVEN>
+
 ScrollReveal().reveal('.tech:nth-child(2)', { origin: 'bottom', reset:true, distance:'100px', delay:100, duration:1000 });
 ScrollReveal().reveal('.tech:nth-child(3)', { origin: 'top', reset:true, distance:'100px', delay:200, duration:1000 });
 ScrollReveal().reveal('.tech:nth-child(4)', { origin: 'bottom', reset:true, distance:'100px', delay:300, duration:1000 });
@@ -103,7 +105,7 @@ flagsElement.addEventListener("click", (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
 });
 
-/*==================== Language Selection Gray Flag====================*/
+/*==================== Language Selection / Gray Flag / Contact Title Translation ====================*/
 
 var flagSpa = document.getElementById('spanish');
 var flagUsa = document.getElementById('english');
@@ -137,10 +139,3 @@ flagUsa.addEventListener('click', function () {
     }
 
 });
-
-  
-
-
-
-
-

@@ -1,0 +1,7 @@
+.contenedor {
+    background: red;
+}
+
+.contenedor:hover, .contenedor.tapped {
+    background: blue;
+}
