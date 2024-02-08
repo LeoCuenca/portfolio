@@ -471,7 +471,7 @@ span{
     flex-direction: column;
     text-align: center;
     padding: 0 2rem;
-    /* transform: translateY(100%); */
+    transform: translateY(100%);
     transition: .5s ease;
 }
 
@@ -852,6 +852,9 @@ span{
         font-size: 50%;
     }
 
+    .portfolio-layer{
+        padding: 0 1rem;
+    }
 
     .portfolio-layer h1{
         padding: 0;
@@ -872,6 +875,15 @@ span{
         margin: 0;
     }
 
+    .techs-used-container{
+        width: 100%;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tech-item{
+        margin: 0;
+    }
 
     .home-img img{
         width: 90vw;
