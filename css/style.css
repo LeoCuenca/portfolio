@@ -847,10 +847,10 @@ span{
 
 }
 
-@media (max-width: 365px){
+@media (max-width: 375px){
 
     html{
-        font-size: 35%;
+        font-size:35%;
     }
 
     .home-img img{
