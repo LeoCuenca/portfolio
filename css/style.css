@@ -680,6 +680,14 @@ span{
 
 /* Breakpoints */
 
+@media (max-width: 1485px){
+
+    html{
+        font-size: 50%;
+    }
+    
+}
+
 @media (max-width: 1200px){
     html{
         font-size: 55%;
@@ -810,10 +818,6 @@ span{
         grid-template-columns: 1fr;
     }
 
-    .portfolio h2{
-        font-size: 3.1rem;
-    }
-
 }
 
 @media (max-width: 450px){
@@ -837,10 +841,6 @@ span{
         width: 12%;
     }
 
-    .title-container span{
-        font-size: 22.32px;
-    }
-
     .footer{
         justify-content: center;
     }
@@ -848,6 +848,10 @@ span{
 }
 
 @media (max-width: 365px){
+
+    html{
+        font-size: 35%;
+    }
 
     .home-img img{
         width: 90vw;

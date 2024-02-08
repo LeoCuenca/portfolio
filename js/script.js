@@ -87,7 +87,6 @@ const typed = new Typed('.multiple-text',{
 /*==================== Language Selection ====================*/
 
 const flagsElement = document.getElementById("flags");
-
 const textsToChange = document.querySelectorAll("[data-section]");
 
 const changeLanguage = async language => {
@@ -115,6 +114,7 @@ const contactUsa = document.getElementById("cont-en");
 
 var menu = document.querySelector('.navbar');
 
+
 flagSpa.addEventListener('click', function () {
 
     if (flagSpa.classList.contains('gray')) {
@@ -128,6 +128,7 @@ flagSpa.addEventListener('click', function () {
     }
 
     navbar.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
 
 });
 
@@ -144,6 +145,7 @@ flagUsa.addEventListener('click', function () {
     }
 
     navbar.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
 
 });
 
