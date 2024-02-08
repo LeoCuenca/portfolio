@@ -826,7 +826,6 @@ span{
         font-size: 45%;
     }
 
-
     .certificates-container .certificates-box:nth-child(2),
     .certificates-container .certificates-box:nth-child(3),
     .certificates-container .certificates-box:nth-child(4){
@@ -850,8 +849,17 @@ span{
 @media (max-width: 375px){
 
     html{
-        font-size:35%;
+        font-size: 40%;
     }
+
+
+    /* .portfolio-layer{
+        font-size: 40%;
+    } */
+
+    /* .home p{
+        font-size: 10rem;
+    } */
 
     .home-img img{
         width: 90vw;
