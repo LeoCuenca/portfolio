@@ -819,7 +819,7 @@ span{
 @media (max-width: 450px){
 
     html{
-        font-size: 50%;
+        font-size: 45%;
     }
 
 
@@ -838,7 +838,7 @@ span{
     }
 
     .title-container span{
-        font-size: 24.8px;
+        font-size: 22.32px;
     }
 
     .footer{

@@ -109,8 +109,11 @@ flagsElement.addEventListener("click", (e) => {
 
 var flagSpa = document.getElementById('spanish');
 var flagUsa = document.getElementById('english');
+
 const contactSpa = document.getElementById("cont-es");
 const contactUsa = document.getElementById("cont-en");
+
+var menu = document.querySelector('.navbar');
 
 flagSpa.addEventListener('click', function () {
 
@@ -123,6 +126,8 @@ flagSpa.addEventListener('click', function () {
         contactSpa.classList.remove('hidden');
         contactUsa.classList.toggle('hidden');
     }
+
+    navbar.classList.remove('active');
 
 });
 
@@ -138,4 +143,16 @@ flagUsa.addEventListener('click', function () {
         contactSpa.classList.toggle('hidden');
     }
 
+    navbar.classList.remove('active');
+
 });
+
+
+
+// flagUsa.addEventListener('click', function () {
+
+//     console.log('LALALALA');
+
+// });
+
+
