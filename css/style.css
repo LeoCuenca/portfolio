@@ -849,17 +849,23 @@ span{
 @media (max-width: 375px){
 
     html{
-        font-size: 40%;
+        font-size: 50%;
     }
 
 
-    /* .portfolio-layer{
-        font-size: 40%;
-    } */
+    .portfolio-layer h1{
+        font-size: 2rem;
+    }
 
-    /* .home p{
-        font-size: 10rem;
-    } */
+    .portfolio-layer p,
+    .tech-name{
+        font-size: 1.2rem;
+    }
+
+    .links-container a i{
+        font-size: 2rem;
+    }
+
 
     .home-img img{
         width: 90vw;
