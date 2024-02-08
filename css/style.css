@@ -471,7 +471,7 @@ span{
     flex-direction: column;
     text-align: center;
     padding: 0 2rem;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
     transition: .5s ease;
 }
 
@@ -854,16 +854,22 @@ span{
 
 
     .portfolio-layer h1{
-        font-size: 2rem;
+        padding: 0;
+        font-size: 1.7rem;
     }
 
     .portfolio-layer p,
     .tech-name{
+        padding: 0;
         font-size: 1.2rem;
     }
 
     .links-container a i{
         font-size: 2rem;
+    }
+
+    .links-container{
+        margin: 0;
     }
 
 
