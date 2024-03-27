@@ -47,12 +47,7 @@ ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { or
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
 
-// ScrollReveal().reveal('.tech:nth-child(even)', { origin: 'top', reset:true, distance:'100px', delay:200, duration:1000 });
-// ScrollReveal().reveal('.tech:nth-child(odd)', { origin: 'bottom', reset:true, distance:'100px', delay:100, duration:1000 });
-
 /*==================== Scroll Reveal Intercalado Skills ====================*/
-
-// HACER UNA RESTRICCION PARA MOVIL QUE LOS PROYECTOS Y ALGUNOS HEADERS NO SE <ACTIVEN></ACTIVEN>
 
 ScrollReveal().reveal('.tech:nth-child(2)', { origin: 'bottom', reset:true, distance:'100px', delay:100, duration:1000 });
 ScrollReveal().reveal('.tech:nth-child(3)', { origin: 'top', reset:true, distance:'100px', delay:200, duration:1000 });
@@ -114,7 +109,6 @@ const contactUsa = document.getElementById("cont-en");
 
 var menu = document.querySelector('.navbar');
 
-
 flagSpa.addEventListener('click', function () {
 
     if (flagSpa.classList.contains('gray')) {
@@ -148,13 +142,5 @@ flagUsa.addEventListener('click', function () {
     menuIcon.classList.remove('bx-x');
 
 });
-
-
-
-// flagUsa.addEventListener('click', function () {
-
-//     console.log('LALALALA');
-
-// });
 
 

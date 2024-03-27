@@ -51,13 +51,31 @@ section{
 
 .header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
-
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar .flags-container:nth-child(2){
+    margin-left: 1rem;
+}
+
+.navbar a:nth-child(4){
+    margin-right: 3rem;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
 }
 
 .logo{
@@ -95,25 +113,6 @@ section{
     filter: grayscale(100%);
 }
 
-.navbar .flags-container:nth-child(2){
-    margin-left: 1rem;
-}
-
-.navbar a:nth-child(4){
-    margin-right: 3rem;
-}
-
-.navbar a{
-    font-size: 1.7rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-}
-
-.navbar a:hover,
-.navbar a.active{
-    color: var(--main-color);
-}
-
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -125,23 +124,6 @@ section{
     justify-content: center;
     align-items: center;
     user-select: none;
-}
-
-.home-img img{
-    width: 27vw;
-    animation: floatImage 4s ease-in-out infinite;
-}
-
-@keyframes floatImage{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-2.4rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
 }
 
 .home-content h3{
@@ -755,12 +737,13 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+        cursor: pointer;
     }
 
     .navbar{
         position: absolute;
-        top: 100%;
         left: 0;
+        top: -100vh;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -769,8 +752,20 @@ span{
         display: none;
     }
 
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-100vh);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(110vh);
+        }
+    }
+    
     .navbar.active{
         display: block;
+        animation: slideDown 0.6s ease forwards;
     }
 
     .navbar a{
