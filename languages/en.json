@@ -27,11 +27,17 @@
     "portfolio":{
         "some": "Some",
         "projects": " Projects",
+        "projName1": "Personal Portfolio",
         "projDescription1": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
+        "projName2": "The Witcher Fan Page",
         "projDescription2": "Project completed as the final assignment for the Laboratory III course of the University Degree in Programming [UTN]. The project was entirely developed individually.",
-        "projDescription3": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
-        "projDescription4": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
-        "projDescription5": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
-        "projDescription6": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences."
+        "projName3": "A&C Seguros",
+        "projDescription3": "Website created for a small or medium-sized enterprise (SME) operating in the property insurance sector.",
+        "projName4": "Nutritionist Carla Cuenca",
+        "projDescription4": "Website project created for a professional nutritionist, with several proposed changes for the future. This is an initial version of the site.",
+        "projName5": "",
+        "projDescription5": "",
+        "projName6": "",
+        "projDescription6": ""
     }
 }

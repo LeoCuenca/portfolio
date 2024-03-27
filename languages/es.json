@@ -27,11 +27,17 @@
     "portfolio":{
         "some": "Algunos",
         "projects": " Projectos",
+        "projName1": "Portfolio Personal",
         "projDescription1": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
+        "projName2": "The Witcher Fan Page",
         "projDescription2": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.",
-        "projDescription3": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
-        "projDescription4": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
-        "projDescription5": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
-        "projDescription6": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras."
+        "projName3": "A&C Seguros",
+        "projDescription3": "Pagina web realizada para una PYME que se dedica al rubro del seguro patrimonial.",
+        "projName4": "Nutricionista Carla Cuenca",
+        "projDescription4": "Proyecto web realizado para una nutricionista profesional, con varios cambios propuestos a futuro, esta es una primera version del sitio.",
+        "projName5": "",
+        "projDescription5": "",
+        "projName6": "",
+        "projDescription6": ""
     }
 }
