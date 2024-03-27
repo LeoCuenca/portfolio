@@ -27,6 +27,11 @@
     "portfolio":{
         "some": "Algunos",
         "projects": " Projectos",
-        "projDescription": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual."
+        "projDescription1": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
+        "projDescription2": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.",
+        "projDescription3": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
+        "projDescription4": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
+        "projDescription5": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
+        "projDescription6": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras."
     }
 }

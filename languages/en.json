@@ -27,6 +27,11 @@
     "portfolio":{
         "some": "Some",
         "projects": " Projects",
-        "projDescription": "Project carried out as a final project for the subject Laboratory III, of the University Technique in Programming [UTN]. It was developed entirely individually."
+        "projDescription1": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
+        "projDescription2": "Project completed as the final assignment for the Laboratory III course of the University Degree in Programming [UTN]. The project was entirely developed individually.",
+        "projDescription3": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
+        "projDescription4": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
+        "projDescription5": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
+        "projDescription6": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences."
     }
 }

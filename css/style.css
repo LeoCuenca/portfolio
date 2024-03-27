@@ -860,6 +860,10 @@ span{
         margin: 0;
     }
 
+    .portfolio-container{
+        width: 400px;
+    }
+
 }
 
 @media (max-width: 375px){
@@ -915,4 +919,14 @@ span{
         margin-top: 2rem;
     }
 
+    .portfolio-container{
+        width: 325px;
+    }
+
+}
+
+@media (max-width: 320px){
+    .portfolio-container{
+        width: 300px;
+    }
 }
