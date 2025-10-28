@@ -123,7 +123,27 @@ section{
     display: flex;
     align-items: center;
     user-select: none;
+    background-image: url();
 }
+
+
+
+
+.img-cont{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.imagen-prueba{
+    position: absolute;
+    width: clamp(60%, 50% + .50vw, 60%);
+    opacity: .4;
+}
+
+
+
+
 
 .home-content h3{
     font-size: 3.2rem;
@@ -813,6 +833,10 @@ span{
     }
     .portfolio-container{
         width: 80%;
+    }
+
+    .img-cont{
+        display: none;
     }
 
 }
