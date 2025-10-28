@@ -25,13 +25,16 @@ html{
 }
 
 body{
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background: linear-gradient(135deg, var(--bg-color), var(--second-bg-color));
     color: var(--text-color);
     overflow-x: hidden;
+    cursor: url('/images/cursor.png'), auto;
 }
 
 section{
     min-height: 100vh;
+    background:transparent;
     padding: 10rem 9% 2rem;
 }
 
@@ -76,6 +79,7 @@ section{
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
+    transition:.6s ease;
 }
 
 .logo{
@@ -113,6 +117,12 @@ section{
     filter: grayscale(100%);
 }
 
+.gray:hover{
+    filter: grayscale(10%);
+    opacity: 75%;
+    transition: .3s ease;
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -123,7 +133,6 @@ section{
     display: flex;
     align-items: center;
     user-select: none;
-    background-image: url();
 }
 
 .img-cont{
@@ -136,6 +145,7 @@ section{
     position: absolute;
     width: clamp(60%, 50% + .50vw, 60%);
     opacity: .4;
+    z-index: -1;
 }
 
 .home-content h3{
@@ -226,7 +236,7 @@ span{
     justify-content: center;
     align-items: center;
     user-select: none;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
     padding-top: 5rem;
 }
 
@@ -316,6 +326,63 @@ span{
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+.scroll-down {
+  height: 70px;
+  width: 40px;
+  border: 3px solid rgb(58, 65, 255);
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid rgb(0, 247, 255);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1.2s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
 
 .certificates-box img{
     width: 100%;
@@ -418,7 +485,7 @@ span{
     align-items: center;
     user-select: none;
     flex-direction: column;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
 }
 
 .title-container{
@@ -550,7 +617,7 @@ span{
     display: flex;
     flex-direction: column;
     user-select: none;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
 }
 
 .title-contact-container{
@@ -596,6 +663,7 @@ span{
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--bg-color);
+    border: 1px solid var(--main-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -699,6 +767,7 @@ span{
     }
 
     .header{
+        height: 10em;
         width: 100vw;
     }
 
@@ -752,7 +821,7 @@ span{
     .navbar{
         position: absolute;
         left: 0;
-        top: -100vh;
+        top: -101vh;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -875,7 +944,13 @@ span{
 
     .portfolio-container{
         width: 400px;
+        padding: 0 2.5em;
     }
+
+    .navbar{
+        top: -103vh;
+    }
+
 
 }
 
@@ -934,6 +1009,7 @@ span{
 
     .portfolio-container{
         width: 325px;
+        padding: 0 .1em;
     }
 
 }

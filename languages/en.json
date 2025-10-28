@@ -25,8 +25,8 @@
     },
 
     "portfolio":{
-        "some": "Some",
-        "projects": " Projects",
+        "some": "My",
+        "projects": " Work",
         "projName1": "Personal Portfolio",
         "projDescription1": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
         "projName2": "The Witcher Fan Page",
