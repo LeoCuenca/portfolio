@@ -62,6 +62,7 @@ ScrollReveal().reveal('.tech:nth-child(11)', { origin: 'top', reset:true, distan
 ScrollReveal().reveal('.tech:nth-child(12)', { origin: 'bottom', reset:true, distance:'100px', delay:1100, duration:1000 });
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
+
 ScrollReveal().reveal('.skills-title h2', { origin: 'right', reset:true, distance:'100px', delay:400, duration:1000 });
 ScrollReveal().reveal('.certificates-title h2', { origin: 'left', reset:true, distance:'100px', delay:1200, duration:1000 });
 
@@ -142,5 +143,4 @@ flagUsa.addEventListener('click', function () {
     menuIcon.classList.remove('bx-x');
 
 });
-
 
