@@ -46,6 +46,7 @@ ScrollReveal().reveal('.home-content, .heading, .title-container', { origin: 'to
 ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
+ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 
@@ -73,10 +74,10 @@ ScrollReveal().reveal('.certificates-box:nth-child(4)', { origin: 'left', reset:
 /*==================== Typed JS ====================*/
 
 const typed = new Typed('.multiple-text',{
-    strings: ['Técnico Universitario en Programación', 'Frontend Developer', 'Software Developer'],
+    strings: ['Técnico Universitario en Programación', 'Frontend Developer'],
     typeSpeed: 50,
     backSpeed: 25,
-    backDelay: 1500,
+    backDelay: 4000,
     loop: true
 });
 
