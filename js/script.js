@@ -145,3 +145,12 @@ flagUsa.addEventListener('click', function () {
 
 });
 
+
+
+
+const halo = document.getElementById("cursor-halo");
+
+document.addEventListener("mousemove", (e) => {
+  halo.style.left = e.clientX + "px";
+  halo.style.top  = e.clientY + "px";
+});
