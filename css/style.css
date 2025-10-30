@@ -20,7 +20,6 @@
 }
 
 html{
-    font-size: clamp(40%, 50% + .1vw, 75%);
     width: 100vw;
     overflow-x: hidden;
 }
@@ -31,6 +30,27 @@ body{
     overflow-x: hidden;
     background-color: #0a192f;
     background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<rect width='120' height='120' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='1'/>\</svg>");
+}
+
+::-webkit-scrollbar {
+    width: 12px;       /* ancho (vertical) */
+}
+
+::-webkit-scrollbar-track {
+    background: #465492;  /* color del fondo del carril */
+}
+
+/* “Thumb” — la parte que se mueve */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 238, 255, 0.466);      /* color principal */
+    border-radius: 20px;   /* bordes redondeados */
+}
+
+/* Al pasar el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+    background: #00f7ff;
+    transition: 3s ease;
+
 }
 
 section{
@@ -87,7 +107,7 @@ section{
 }
 
 .navbar a{
-    font-size: 1.7rem;
+    font-size: clamp(1.1rem, .7vw + .1rem, 1.5rem);
     color: var(--text-color);
     margin-left: 4rem;
 }
@@ -99,7 +119,7 @@ section{
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: clamp(1.3rem, 1vw + .7rem, 2.5rem);
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
@@ -140,7 +160,7 @@ section{
 }
 
 #menu-icon{
-    font-size: 3.6rem;
+    font-size: 2.2rem;
     color: var(--text-color);
     display: none;
 }
@@ -165,26 +185,20 @@ section{
 }
 
 .home-content h3{
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 2vw + .7rem, 2.7rem);
     font-weight: 700;
 }
-
-/* PODRIA VOLAR */
 
 .home-content{
     width: 100%;
 }
-
-/* .home-content h3:nth-of-type(2){
-    margin-bottom: 2rem;
-} */
 
 span{
     color: var(--main-color);
 }
 
 .home-content h1{
-    font-size: 7rem;
+    font-size: clamp(2.65rem, 4vw + 1rem, 6rem);
     font-weight: 700;
     line-height: 1.3;
 }
@@ -206,20 +220,16 @@ span{
   }
 }
 
-.home-content p{
-    font-size: 1.6rem;
-}
-
 .social-media a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: clamp(3.5rem, 2vw + 1rem, 6rem);
+    height: clamp(3.5rem, 2vw + 1rem, 6rem);
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: clamp(.5rem, 3vw + 1rem, 2rem);
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
@@ -786,18 +796,8 @@ span{
     display: none;
 }
 
-@media (max-width: 1485px){
-
-    html{
-        font-size: 50%;
-    }
-    
-}
 
 @media (max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
 
     .about-content p{
         font-size: 1.5rem;
@@ -889,20 +889,11 @@ span{
 
     .navbar a{
         display: block;
-        font-size: 2rem;
         margin: 3rem 0;
     }
 
     .home{
         flex-direction: column;
-    }
-
-    .home-content h3{
-        font-size: 2rem;
-    }
-
-    .home-content h1{
-        font-size: 4rem;
     }
 
     .home-img img{
@@ -960,10 +951,6 @@ span{
 
 @media (max-width: 450px){
 
-    html{
-        font-size: 45%;
-    }
-
     .certificates-container .certificates-box:nth-child(2),
     .certificates-container .certificates-box:nth-child(3),
     .certificates-container .certificates-box:nth-child(4){
@@ -996,10 +983,6 @@ span{
 }
 
 @media (max-width: 375px){
-
-    html{
-        font-size: 50%;
-    }
 
     .portfolio-layer{
         padding: 0 1rem;
