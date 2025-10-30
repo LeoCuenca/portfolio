@@ -1,8 +1,8 @@
 {
     "navbar":{
-        "home": "Inicio",
-        "aboutNav": "Sobre mi",
-        "contact": "Contacto"
+        "home": "// Inicio",
+        "aboutNav": "// Sobre mi",
+        "contact": "// Contacto"
     },
 
     "home":{
