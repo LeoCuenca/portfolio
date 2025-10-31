@@ -109,7 +109,7 @@ section{
 }
 
 .navbar a{
-    font-size: clamp(1.1rem, 1.037rem + 0.29vw, 1.5rem);
+    font-size: clamp(1.1rem, .737rem + 0.35vw, 1.5rem);
     color: var(--text-color);
     margin-left: clamp(1rem, 0.286rem + 1.705vw, 2rem);
 }
@@ -320,19 +320,19 @@ span{
 }
 
 .about-content span{
-    font-size: clamp(2.5rem, 1.071rem + 3.81vw, 4.5rem);
+    font-size: clamp(2.5rem, 2.183rem + 1.448vw, 4.5rem);
     font-weight: bolder;
 }
 
 .about-content p{
-    font-size: clamp(1rem, 0.643rem + 0.952vw, 1.35rem);
+    font-size: clamp(1rem, 0.945rem + 0.253vw, 1.35rem);
     margin: .7rem;
 }
 
 .skills-title h2{
     padding-bottom: 1rem;
     margin: 3rem 0;
-    font-size: clamp(1.2rem, 0.5rem + 1.333vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.121rem + 0.362vw, 1.7rem);
     border-bottom: 1px solid var(--main-color);
 }
 
@@ -349,7 +349,7 @@ span{
 .certificates-title h2{
     padding-bottom: 1rem;
     margin: 1.5rem 0;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 1.121rem + 0.362vw, 1.7rem);
     border-bottom: 1px solid var(--main-color);
 }
 
@@ -376,12 +376,6 @@ span{
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-
 
 .scroll-down {
   height: 70px;
@@ -430,12 +424,6 @@ span{
   }
 }
 
-
-
-
-
-
-
 .certificates-box img{
     width: 100%;
 }
@@ -445,12 +433,13 @@ span{
 }
 
 .certificates-box h2{
+    font-size: clamp(1rem, 0.921rem + 0.362vw, 1.5rem);
     text-decoration: underline;
     padding: .5rem 0 0 0;
 }
 
 .certificates-box p{
-    font-size: 1.3rem;
+    font-size: clamp(.937rem, 0.952rem + 0.217vw, 1.3rem);
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -462,7 +451,7 @@ span{
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 0.952rem + 0.217vw, 1.3rem);
     font-weight: 600;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
@@ -546,11 +535,12 @@ span{
 }
 
 .title-container h2{
+    font-size: clamp(1.5rem, 1.183rem + 1.448vw, 3.5rem);
     display: inline-flex;
 }
 
 .title-container span{
-    font-size: 4.5rem;
+    font-size: clamp(1.5rem, 1.183rem + 1.448vw, 3.5rem);
     font-weight: 700;
 }
 
@@ -597,15 +587,13 @@ span{
 }
 
 .portfolio-layer h1{
-    font-size: 2.4rem;
+    font-size: clamp(1.1rem, 1.037rem + 0.29vw, 1.5rem);
     text-shadow: 1px 1px 2px black;
     padding: .5rem;
 }
 
 .portfolio-layer p{
-    font-weight: 700;
-    font-size: clamp(1rem, .8rem + .3vw, 1.5rem);
-    /* font-size: 1.2rem; */
+    font-size: clamp(0.65rem, 0.579rem + 0.326vw, 1.1rem);
     text-shadow: 1px 1px 2px black;
     padding: .5rem;
 }
@@ -626,8 +614,12 @@ span{
     transition: .5s all;
 }
 
+/* SEGUIR ACA SI SIS I */
+
+
+
 .portfolio-layer a i{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--second-bg-color);
 }
 
@@ -986,13 +978,12 @@ span{
 
     .portfolio-layer h1{
         padding: 0;
-        font-size: 1.7rem;
     }
 
     .portfolio-layer p,
     .tech-name{
         padding: 0;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
 
     .links-container a i{
