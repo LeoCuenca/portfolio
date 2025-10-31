@@ -249,7 +249,7 @@ span{
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 2rem var(--main-color);
-    font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+    font-size: clamp(1rem, 0.921rem + 0.362vw, 1.5rem);
     font-weight: 600;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
@@ -299,8 +299,12 @@ span{
 
 .heading{
     text-align: center;
-    font-size: clamp(2.5rem, 1.071rem + 3.81vw, 4.5rem);
+    font-size: clamp(2.5rem, 2.183rem + 1.448vw, 4.5rem);
 }
+
+
+/* ACA TENGO QUE SEGUIR */
+
 
 .h-translate{
     display: inline;
