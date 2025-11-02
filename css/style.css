@@ -25,12 +25,22 @@ html{
 }
 
 body{
-    background: linear-gradient(135deg, var(--bg-color), var(--second-bg-color));
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #000000);
+    background: linear-gradient(to right, #141414, #232526);
     color: var(--text-color);
     overflow-x: hidden;
-    background-color: #0a192f;
-    background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<rect width='120' height='120' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='1'/>\</svg>");
 }
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -100000; /* 👈 lo envía detrás del resto */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='1'/></svg>");
+  background-repeat: repeat;
+  background-size: 120px 120px;
+}
+
 
 ::-webkit-scrollbar {
     width: 12px;       /* ancho (vertical) */
@@ -182,7 +192,7 @@ section{
 .hero{
     position: absolute;
     width: clamp(60%, 50% + .50vw, 60%);
-    opacity: .4;
+    opacity: .7;
     z-index: -1;
 }
 
@@ -231,7 +241,7 @@ span{
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-size: clamp(0.5rem, 0.262rem + 1.086vw, 2rem);
+    font-size: clamp(1.5rem, 1.347rem + 0.408vw, 2rem);
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
@@ -382,11 +392,14 @@ span{
   width: 40px;
   border: 3px solid rgb(89, 95, 255);
   position: absolute;
-  left: 50%;
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
+  inset: 0;
+  margin: auto;
+  margin-bottom: 20px;
 }
+
 .scroll-down::before,
 .scroll-down::after {
   content: "";
@@ -526,7 +539,6 @@ span{
     align-items: center;
     user-select: none;
     flex-direction: column;
-    /* background: var(--bg-color); */
 }
 
 .title-container{
@@ -593,39 +605,36 @@ span{
 }
 
 .portfolio-layer p{
-    font-size: clamp(0.65rem, 0.579rem + 0.326vw, 1.1rem);
+    font-size: clamp(.8rem, 0.579rem + 0.326vw, 1.1rem);
     text-shadow: 1px 1px 2px black;
     padding: .5rem;
 }
 
-.portfolio-layer a{
+.links-container{
+    margin: .5rem 0;
+}
+
+.links-container a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 10px;
     background: var(--text-color);
     border-radius: 50%;
     margin: 0 1rem;
 }
 
-.portfolio-layer a:hover{
+.links-container a:hover{
     background: rgb(184, 184, 184);
     transform: scale(1.1);
     transition: .5s all;
 }
 
-/* SEGUIR ACA SI SIS I */
-
-
-
-.portfolio-layer a i{
+.links-container a i{
     font-size: 1.5rem;
     color: var(--second-bg-color);
 }
-
-.links-container{
-    margin: 1rem 0;
-}
+/* SEGUIR ACA SI SIS I */
 
 .techs-used-container{
     display: flex;
@@ -651,7 +660,7 @@ span{
 
 .tech-name{
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 0.737rem + 0.18w, 1.2rem);
     text-shadow: 1px 1px 2px black;
 }
 
@@ -675,7 +684,7 @@ span{
 
 .heading-contact{
     text-align: center;
-    font-size: 4.5rem;
+    font-size: clamp(1.5rem, 1.183rem + 1.448vw, 3.5rem);
 }
 
 #cont-en,
@@ -703,8 +712,8 @@ span{
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
+    padding: 1em;
+    font-size:clamp(0.8rem, 0.768rem + 0.145vw, 1rem);
     color: var(--text-color);
     background: var(--bg-color);
     border: 1px solid var(--main-color);
@@ -736,7 +745,7 @@ span{
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 2rem var(--main-color);
-    font-size: 1.6rem;
+    font-size:clamp(1rem, 0.952rem + 0.217vw, 1.3rem);
     font-weight: 600;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
@@ -781,7 +790,7 @@ span{
 }
 
 .footer-iconTop a i{
-    font-size: 2.4rem;
+    font-size: clamp(1.3rem, 1.221rem + 0.362vw, 1.8rem);
     color: var(--second-bg-color);
 }
 
@@ -797,7 +806,6 @@ span{
     }
 
     .header{
-        /* height: 10em; */
         width: 100vw;
     }
 
@@ -810,7 +818,7 @@ span{
 
 @media (max-width: 991px){
     .header{
-        padding: 2rem 3%;
+        padding: 1em 1%;
     }
 
     .about{
@@ -843,6 +851,11 @@ span{
 }
 
 @media (max-width: 768px){
+
+    .header{
+        height: 8vh;
+    }
+
     #menu-icon{
         display: block;
         cursor: pointer;
@@ -854,8 +867,9 @@ span{
         top: -101vh;
         width: 100%;
         padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
+        background: linear-gradient(to right, #141414, #232526);
+        border-top: .1em solid rgba(0, 0, 0, .2);
+        border-bottom:.2em solid rgba(0, 225, 255, 0.365);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
@@ -867,7 +881,7 @@ span{
         }
         to {
             opacity: 1;
-            transform: translateY(110vh);
+            transform: translateY(108vh);
         }
     }
     
@@ -878,7 +892,7 @@ span{
 
     .navbar a{
         display: block;
-        margin: 3rem 0;
+        margin: 2em 0;
     }
 
     .home{
@@ -963,10 +977,6 @@ span{
         width: 400px;
         padding: 0 2.5em;
     }
-
-    .navbar{
-        top: -103vh;
-    }
     
 }
 
@@ -983,11 +993,6 @@ span{
     .portfolio-layer p,
     .tech-name{
         padding: 0;
-        /* font-size: 1.2rem; */
-    }
-
-    .links-container a i{
-        font-size: 2rem;
     }
 
     .links-container{
