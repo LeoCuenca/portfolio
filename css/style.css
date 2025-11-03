@@ -540,8 +540,13 @@ span{
 }
 
 .title-container{
+    display: flex;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.title-container span{
+    margin-left: 20px;
 }
 
 .portfolio-container{
@@ -657,6 +662,7 @@ span{
     display: flex;
     flex-direction: column;
     user-select: none;
+    min-height: 50vh;
 }
 
 .title-contact-container{
@@ -664,6 +670,7 @@ span{
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5em;
+    height: 3rem;
 }
 
 #cont-en,
@@ -777,6 +784,12 @@ span{
     display: none;
 }
 
+@media (max-width: 1500px){
+    .portfolio{
+        padding: 5em;
+    }
+    
+}
 
 @media (max-width: 1200px){
 
@@ -924,6 +937,10 @@ span{
         justify-content: center;
     }
 
+    .portfolio{
+        padding: .5em;
+    }
+
 }
 
 @media (max-width: 450px){
@@ -992,6 +1009,28 @@ span{
         text-align: center;
     }
 
+    .portfolio-box{
+        height: 350px;
+    }
+
+    .portfolio-box img{
+        object-fit: cover;
+    }
+
+    .techs-used-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tech-item{
+        margin: .2em 0;
+    }
+
+    .links-container a{
+        margin: 0;
+    }
+
+
 }
 
 @media (max-width: 375px){
@@ -1009,20 +1048,6 @@ span{
     .portfolio-layer p,
     .tech-name{
         padding: 0;
-    }
-
-    .links-container{
-        margin: 0;
-    }
-
-    .techs-used-container{
-        width: 100%;
-        justify-content: space-around;
-        margin: 0;
-    }
-
-    .tech-item{
-        margin: 0;
     }
 
     .about-img img{

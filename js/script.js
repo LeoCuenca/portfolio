@@ -91,7 +91,7 @@ const changeLanguage = async language => {
     const texts = await requestJson.json();
 
     for (const textToChange of textsToChange){
-        const section =textToChange.dataset.section;
+        const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
         textToChange.innerHTML = texts[section][value];
     }
@@ -147,10 +147,10 @@ flagUsa.addEventListener('click', function () {
 
 
 
-
 const halo = document.getElementById("cursor-halo");
 
 document.addEventListener("mousemove", (e) => {
   halo.style.left = e.clientX + "px";
   halo.style.top  = e.clientY + "px";
 });
+
