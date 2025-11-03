@@ -988,6 +988,10 @@ span{
         top: 135px;
     }
 
+    .skills-title h2, .certificates-title h2{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 375px){
