@@ -1,4 +1,4 @@
-/*==================== toggle icon navbar ====================*/
+/*==================== Toggle Icon Navbar ====================*/
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
