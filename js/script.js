@@ -154,3 +154,7 @@ document.addEventListener("mousemove", (e) => {
   halo.style.top  = e.clientY + "px";
 });
 
+
+
+
+// const boton = document.querySelector(.'')
