@@ -699,7 +699,8 @@ span{
 .contact form textarea {
     width: 100%;
     padding: 1em;
-    font-size:clamp(0.8rem, 0.768rem + 0.145vw, 1rem);
+    font-size:clamp(1rem, 0.768rem + 0.145vw, 1rem);
+    -webkit-text-size-adjust: 100%;
     color: var(--text-color);
     background: var(--bg-color);
     border: 1px solid var(--main-color);
