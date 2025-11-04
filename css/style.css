@@ -750,15 +750,32 @@ span{
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--bg-color);
 }
 
-.footer p{
+.footer-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text p{
     font-size: 1.6rem;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-menu-item{
+    margin: .2em;
+    text-decoration: none;
+    color: white;
 }
 
 .footer-iconTop a{
@@ -1023,6 +1040,7 @@ span{
     }
 
     .tech-item{
+        border-radius: .6em;
         margin: .2em 0;
     }
 
