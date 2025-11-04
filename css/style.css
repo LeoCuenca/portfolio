@@ -965,10 +965,6 @@ span{
         text-align: center;
     }
 
-   .footer-text p{
-        margin-bottom: .8em;
-    } 
-
     .menu-footer{
         margin: 1em 0;
     }
@@ -1089,11 +1085,6 @@ span{
     .about-img img{
         margin-top: 0;
         width: 60vw;
-    }
-
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
     }
 
     .social-media{
