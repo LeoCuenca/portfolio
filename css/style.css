@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tinos:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +8,11 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 1.5px;
+
 }
 
 :root{
@@ -88,9 +91,9 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 1rem 4%;
     background: transparent;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     z-index: 999;
     user-select: none;
@@ -128,25 +131,6 @@ section{
 .navbar a.active{
     color: var(--main-color);
     transition:.6s ease;
-}
-
-.logo{
-    font-size: clamp(1.3rem, 1.11rem + 0.869vw, 2.5rem);
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
-    animation: slideLogo .7s ease forwards;
-}
-
-@keyframes slideLogo{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 .flags{
@@ -306,17 +290,43 @@ span{
     padding-top: 5rem;
 }
 
-.about-img img{
-    width: 20vw;
-    filter: drop-shadow(-4px 7px 5px #787878);
-    filter: drop-shadow(0px 0px 26px #787878);
-    margin-right: 7rem;
+.title-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.heading, .about-content span, .title-container span, .title-container span, .heading-contact{
+.heading,
+.about-content span,
+.title-container span,
+.heading-contact{
+    font-size: clamp(2.5rem, 1.5rem + 1.248vw, 3.5rem);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title-container span{
+    margin-left: 20px;
+}
+
+.linea{
+    display: block;
+    width: 3%;
+    height: 5px;
+    background-color: #00bcd4; /* color de la línea */
+    margin: .5em auto; /* separación arriba y abajo */
+    border-radius: 2px; /* opcional, bordes suaves */
+}
+
+.about-intro{
+    display: inline-block;
     text-align: center;
-    font-size: clamp(2.5rem, 2rem + 1.248vw, 4.5rem);
-    font-weight: bolder;
+    font-size: clamp(1rem, 0.945rem + 0.253vw, 1.35rem);
+    margin: 0 15%;
+    margin-bottom: 3em;
+
 }
 
 .h-translate{
@@ -328,13 +338,8 @@ span{
     padding: .8rem 2rem;
 }
 
-.about-content h2{
-    line-height: 1.2;
-}
-
 .about-content p{
     font-size: clamp(1rem, 0.945rem + 0.253vw, 1.35rem);
-    margin: .7rem;
 }
 
 .skills-title h2{
@@ -396,6 +401,7 @@ span{
   inset: 0;
   margin: auto;
   margin-bottom: 20px;
+  z-index: 10;
 }
 
 .scroll-down::before,
@@ -537,16 +543,6 @@ span{
     align-items: center;
     user-select: none;
     flex-direction: column;
-}
-
-.title-container{
-    display: flex;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.title-container span{
-    margin-left: 20px;
 }
 
 .portfolio-container{
