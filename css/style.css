@@ -326,8 +326,43 @@ span{
     font-size: clamp(1rem, 0.945rem + 0.253vw, 1.35rem);
     margin: 0 15%;
     margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text-container{
 
 }
+
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills-skill{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid teal;
+    background-color: rgba(78, 78, 78, 0.379);
+    border-radius: 7px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.641);
+}
+
+
+
+
+
 
 .h-translate{
     display: inline;
