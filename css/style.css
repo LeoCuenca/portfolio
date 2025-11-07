@@ -335,13 +335,30 @@ span{
 
 
 .about-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.about-title,
+.skills-title{
+    font-size: clamp(1rem, 0.889rem + 0.907vw, 1.8rem);
+    margin-bottom: 2rem;
 }
 
 .about-text-container{
-
+    display: block;
+    unicode-bidi: isolate;
 }
+
+.about-text{
+    font-size: clamp(1rem, 0.945rem + 0.353vw, 1.35rem);
+}
+
+.about-text:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+
 
 
 .skills{
@@ -366,15 +383,6 @@ span{
 
 .h-translate{
     display: inline;
-}
-
-.cv{
-    margin-top: 1.2em;
-    padding: .8rem 2rem;
-}
-
-.about-content p{
-    font-size: clamp(1rem, 0.945rem + 0.253vw, 1.35rem);
 }
 
 .skills-title h2{
