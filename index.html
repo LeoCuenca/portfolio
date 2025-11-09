@@ -20,13 +20,13 @@
     <div id="cursor-halo"></div>
     <!-- Header Design -->
     <header class="header">
-            <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active" data-section="navbar" data-value="home">// Inicio</a>
-            <a href="#about" data-section="navbar" data-value="aboutNav">// Sobre mi</a>
+            <a href="#home" class="active" data-section="navbar" data-value="home">Inicio</a>
+            <a href="#about" data-section="navbar" data-value="aboutNav">Sobre mi</a>
             <!-- <a href="#services">Servicios</a> -->
-            <a href="#portfolio">// Portfolio</a>
-            <a href="#contact" data-section="navbar" data-value="contact">// Contacto</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact" data-section="navbar" data-value="contact">Contacto</a>
             <div class="flags" id="flags">
                 <div class="flags-container" data-language="es">
                     <img src="images/spain.png" alt="" id="spanish">
@@ -40,17 +40,30 @@
 
     <!-- Home Section Design -->
     <section class="home" id="home">
+        <div class="social-bar">
+            <a href="#" target="_blank" class="">
+                <img src="images/gh.png" alt="">
+            </a>
+            <a href="#" target="_blank" class="">
+                <img src="images/linkedin.png">
+            </a>
+            <a href="#" target="_blank" class="">
+                <img src="images/spotify.png" alt="">
+            </a>
+            <a href="#" target="_blank" class="">
+                <img src="images/ig.png" alt="">
+            </a>
+            <a href="#" target="_blank" class="">
+                <img src="images/wsp.png" alt="">
+            </a>
+        </div>
         <div class="home-content">
-            <h3 class="blur-in" data-section="home" data-value="hi">Hola, soy</h3>
-            <h1 class="blur-in">Leonel Cuenca</h1>
-            <h3 class="blur-in"><span class="multiple-text"></span></h3>
-            <div class="img-cont">
-                <img class="hero" src="images/2.png" alt="">
-            </div>
-            <div class="social-media">
+            <h1 class="home-title blur-in" data-section="home" data-value="hi">Hola, soy Leonel Cuenca</h1>
+            <h3 class="home-multiple blur-in"><span class="multiple-text"></span></h3>
+            <!-- <div class="social-media">
                 <a href="https://github.com/LeoCuenca" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/leo-cuenca/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+            </div> -->
         </div>
         <a class="link-test" href="#about">
             <div class="scroll-down"></div>
@@ -76,261 +89,258 @@
                 <div class="skills-container">
                     <h3 class="skills-title">Mis habilidades</h3>
                     <div class="skills">
-                        <div class="skills-skill">HTML</div>
-                        <div class="skills-skill">CSS</div>
-                        <div class="skills-skill">JavaScript</div>
-                        <div class="skills-skill">React</div>
-                        <div class="skills-skill">GIT</div>
-                        <div class="skills-skill">GitHub</div>
-                        <div class="skills-skill">Resposive Design</div>
-                        <div class="skills-skill">SEO</div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/react.png" alt="">
+                            React
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/git.png" alt="">
+                            GIT
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/github.png" alt="">
+                            GitHub
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/cel.png" alt="">
+                            Resposive Design
+                        </div>
+                        <div class="skills-skill">
+                            <img class="skill-img" src="images/seo.png" alt="">
+                            SEO
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="about-skills">
-                <div class="skills-title">
-                    <h2 data-section="about" data-value="tech">Tecnologías</h2>
-                </div>
-                <img src="images/html.png" class="tech" alt="html">
-                <img src="images/css.png" class="tech" alt="css">
-                <img src="images/js.png" class="tech" alt="javascript">
-                <img src="images/python.png" class="tech" alt="python">
-                <img src="images/git.png" class="tech" alt="git">
-            </div>
-            <div class="certificates-container">
-                <div class="certificates-title">
-                    <h2 data-section="about" data-value="certs">Certificaciones</h2>
-                </div>
-                <div class="certificates-box">
-                    <img src="images/full-stack-mini.jpg" alt="">
-                    <h2>Full Stack Python</h2>
-                    <p>Gob. de la Ciudad de Buenos Aires</p>
-                    <a href="images/full-stack.jpg" class="btn" data-section="about" data-value="wide" data-lightbox = "full-stack">Ver</a>
-                </div>
-                <div class="certificates-box">
-                    <img src="images/ingles-mini.png" alt="">
-                    <h2>EFSET</h2>
-                    <p>Nivel C2 - Proficient</p>
-                    <a href="images/ingles.jpg" class="btn" data-section="about" data-value="wide" data-lightbox = "ingles">Ver</a>
-                </div>
-                <div class="certificates-box">
-                    <img src="images/reparacion-mini.jpg" alt="">
-                    <h2>Armado y Reparación de PC</h2>
-                    <p>Universidad Tecnológica Nacional</p>
-                    <a href="images/reparacion.jpg" class="btn" data-section="about" data-value="wide" data-lightbox = "reparacion">Ver</a>
-                </div>
-            </div>
+            <a href="#contact" class="btn" data-section="about" data-value="wide" >Contactame</a>
         </div>
     </section>
 
     <!-- Services Section Design -->
-    <!-- <section class="services" id="services">
-        <h2 class="heading">Nuestros <span>Servicios</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>  
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bxs-paint"></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi similique rem incidunt earum voluptatum odio, molestiae id tempora aut, eaque minima veritatis, obcaecati repellat.</p>
-                <a href="#" class="btn">Leer mas</a>
-            </div>
-        </div>
-    </section> -->
+  
+    
     
     <!-- Portfolio Section Design -->
+
     <section class="portfolio" id="portfolio">
-        <div class="title-container">
-            <h2 class="heading" data-section="portfolio" data-value="some">Mis</h2>
-            <span data-section="portfolio" data-value="projects">Proyectos</span>
-        </div>
         <div class="portfolio-container">
+            <div class="title-container">
+                <h2 class="heading" data-section="portfolio" data-value="some">Mis</h2>
+                <span data-section="portfolio" data-value="projects">Proyectos</span>
+            </div>
+            <span class="linea"></span>
+            <p class="portfolio-intro">En esta sección vas a encontrar una selección de mis proyectos más destacados. Cada uno refleja mi forma de trabajar: atención al detalle, diseño funcional y enfoque en la experiencia del usuario. Me gusta combinar creatividad y técnica para convertir ideas en soluciones visuales y digitales que realmente funcionan.</p>
+            <div class="project-container">
+                <div class="project-img-cont">
+                    <img src="images/note.png" alt="" class="note-frame">
+                    <div class="screen">
+                        <div class="slider">
+                            <img src="images/portfolio-home.png" alt="" class="slide">
+                            <img src="images/portfolio-about.png" alt="" class="slide">
+                            <img src="images/portfolio-projects.png" alt="" class="slide">
+                            <img src="images/portfolio-contact.png" alt="" class="slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <h2 class="info-title">Mi portfolio</h2>
+                    <p class="info-description">Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.</p>
+                    <div class="project-links">
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/github.png" alt=""></a>
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/link.png" alt=""></a>
+                    </div>
+                    <div class="project-techs">
+                        
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
+                        </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName1">Portfolio Personal</h1>
-                    <p data-section="portfolio" data-value="projDescription1">Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales.</p>
-                    <div class="links-container">
-                        <a href="https://github.com/LeoCuenca/portfolio" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="#home"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
                         </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
                         </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName2">The Witcher Fan Page</h1>
-                    <p data-section="portfolio" data-value="projDescription2">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
-                    <div class="links-container">
-                        <a href="https://github.com/LeoCuenca/The-Witcher-Page" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://leocuenca.github.io/The-Witcher-Page/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
+            <div class="project-container">
+                <div class="project-img-cont">
+                    <img src="images/note.png" alt="" class="note-frame">
+                    <div class="screen">
+                        <div class="slider">
+                            <img src="images/seguros1.png" alt="" class="slide">
+                            <img src="images/seguros2.png" alt="" class="slide">
+                            <img src="images/seguros3.png" alt="" class="slide">
+                            <img src="images/seguros4.png" alt="" class="slide">
                         </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <h2 class="info-title">A&C Seguros</h2>
+                    <p class="info-description">Pagina web realizada para una PYME que se dedica al rubro del seguro patrimonial.</p>
+                    <div class="project-links">
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/github.png" alt=""></a>
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/link.png" alt=""></a>
+                    </div>
+                    <div class="project-techs">
+                        
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
                         </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
                         </div>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName3">A&C Seguros</h1>
-                    <p data-section="portfolio" data-value="projDescription3">Pagina web realizada para una PYME que se dedica al rubro del seguro patrimonial.</p>
-                    <div class="links-container">
-                        <a href="https://github.com/LeoCuenca/ACSeguros" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://leocuenca.github.io/ACSeguros/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
+            <div class="project-container">
+                <div class="project-img-cont">
+                    <img src="images/note.png" alt="" class="note-frame">
+                    <div class="screen">
+                        <div class="slider">
+                            <img src="images/nutricion1.png" alt="" class="slide">
+                            <img src="images/nutricion2.png" alt="" class="slide">
+                            <img src="images/nutricion3.png" alt="" class="slide">
+                            <img src="images/nutricion4.png" alt="" class="slide">
+                            <img src="images/nutricion5.png" alt="" class="slide">
                         </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <h2 class="info-title">Nutricionista Carla Cuenca</h2>
+                    <p class="info-description">Proyecto web realizado para una nutricionista, con varios cambios propuestos a futuro, esta es una primera version del sitio.</p>
+                    <div class="project-links">
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/github.png" alt=""></a>
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/link.png" alt=""></a>
+                    </div>
+                    <div class="project-techs">
+                        
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
                         </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
                         </div>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName4">Nutricionista Carla Cuenca</h1>
-                    <p data-section="portfolio" data-value="projDescription4">Proyecto web realizado para una nutricionista profesional, con varios cambios propuestos a futuro, esta es una primera version del sitio.</p>
-                    <div class="links-container">
-                        <a href="https://github.com/LeoCuenca/carNutrition" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://leocuenca.github.io/carNutrition/#home" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
+            <div class="project-container">
+                <div class="project-img-cont">
+                    <img src="images/note.png" alt="" class="note-frame">
+                    <div class="screen">
+                        <div class="slider">
+                            <img src="images/utn1.png" alt="" class="slide">
+                            <img src="images/utn2.png" alt="" class="slide">
+                            <img src="images/utn3.png" alt="" class="slide">
+                            <img src="images/utn4.png" alt="" class="slide">
+                            <img src="images/utn5.png" alt="" class="slide">
                         </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
+                    </div>
+                </div>
+                <div class="project-info-container">
+                    <h2 class="info-title">Proyecto Final UTN</h2>
+                    <p class="info-description">Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.</p>
+                    <div class="project-links">
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/github.png" alt=""></a>
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/link.png" alt=""></a>
+                    </div>
+                    <div class="project-techs">
+                        
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
                         </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
                         </div>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName5"></h1>
-                    <p data-section="portfolio" data-value="projDescription5"></p>
-                    <div class="links-container">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
-                        </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
-                        </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
+            <div class="project-container">
+                <div class="project-img-cont">
+                    <img src="images/note.png" alt="" class="note-frame">
+                    <div class="screen">
+                        <div class="slider">
+                            <img src="images/cfp1.png" alt="" class="slide">
+                            <img src="images/cfp2.png" alt="" class="slide">
+                            <img src="images/cfp3.png" alt="" class="slide">
+                            <img src="images/cfp4.png" alt="" class="slide">
+                            <img src="images/cfp5.png" alt="" class="slide">
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="project-info-container">
+                    <h2 class="info-title"></h2>
+                    <p class="info-description">Página desarrollada para el colegio donde actualmente trabajo como docente, dando clases de programación web, estructurada y orientada a objetos.</p>
+                    <div class="project-links">
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/github.png" alt=""></a>
+                        <a href="#home"><img class="hvr-bounce-in" src="/images/link.png" alt=""></a>
+                    </div>
+                    <div class="project-techs">
+                        
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/html.png" alt="">
+                            HTML
+                        </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="" class="bgn">
-                <div class="portfolio-layer">
-                    <h1 data-section="portfolio" data-value="projName6"></h1>
-                    <p data-section="portfolio" data-value="projDescription6"></p>
-                    <div class="links-container">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                    <div class="techs-used-container">
-                        <div class="tech-item">
-                            <img src="images/html.png" alt="html">
-                            <span class="tech-name">HTML</span>
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/css.png" alt="">
+                            CSS
                         </div>
-                        <div class="tech-item">
-                            <img src="images/css.png" alt="css">
-                            <span class="tech-name">CSS</span>
+
+                        <div class="skills-skill skill-project">
+                            <img class="skill-img" src="images/js.png" alt="">
+                            JavaScript
                         </div>
-                        <div class="tech-item">
-                            <img src="images/js.png" alt="javascript">
-                            <span class="tech-name">JavaScript</span>
-                        </div>
+
                     </div>
                 </div>
             </div>

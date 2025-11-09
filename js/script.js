@@ -31,7 +31,7 @@ window.onscroll = () => {
     /*==================== Sticky Navbar ====================*/
     
     let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 450);
+    header.classList.toggle('sticky', window.scrollY > 250);
 
     /*==================== Remove Toggle Icon And Navbar When Click Navbar Link (Scroll) ====================*/
     
@@ -42,11 +42,15 @@ window.onscroll = () => {
 
 /*==================== Scroll Reveal ====================*/
 
-ScrollReveal().reveal('.home-content, .heading, .title-container', { origin: 'top', reset:true, distance:'80px', delay:100, duration:2000 });
-ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
-ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
+ScrollReveal().reveal('.home-title', { origin: 'top', reset:true, distance:'80px', delay:100, duration:1000 });
+ScrollReveal().reveal('.home-multiple', { origin: 'bottom', reset:true, distance:'80px', delay:100, duration:1000 });
+ScrollReveal().reveal('.social-bar', { origin: 'left', reset:true, distance:'80px', delay:1000, duration:2000 });
+ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:2000, duration:1500 });
+
+// ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
+// ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
+// ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
+// ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 
@@ -145,9 +149,28 @@ flagUsa.addEventListener('click', function () {
 
 });
 
+// COLOR MOUSE
+
 const halo = document.getElementById("cursor-halo");
 
 document.addEventListener("mousemove", (e) => {
   halo.style.left = e.clientX + "px";
   halo.style.top  = e.clientY + "px";
 });
+
+
+// Carrousel rotation
+
+
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach(slider => {
+  const slides = slider.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }, Math.random() * (4000 - 1500) + 1500); // Randomizer del tiempo
+});
+
