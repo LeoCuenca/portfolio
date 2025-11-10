@@ -240,7 +240,7 @@ span{
 .about{
     display: block;
     user-select: none;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 4rem;
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -263,7 +263,7 @@ span{
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .title-container span{
@@ -518,7 +518,6 @@ span{
 /*====================================================================================================*/
 
 .portfolio{
-    display: flex;
     max-width: 100rem;
     margin: auto;
     scroll-margin-top: 4.5rem;
@@ -656,10 +655,9 @@ span{
 /* Contact Section Styles */
 
 .contact{
-    display: flex;
-    flex-direction: column;
     user-select: none;
-    min-height: 50vh;
+    min-height: 100vh;
+    scroll-margin-top: 4.5rem;
 }
 
 .title-contact-container{
@@ -801,58 +799,14 @@ span{
 }
 
 @media (max-width: 1500px){
-    /* .portfolio{
-        padding: 5em;
-    }
-     */
+
 }
 
 @media (max-width: 1200px){
-
-    /* .tech{
-        width: 8%;
-    }
-
-    .header{
-        width: 100vw;
-    }
-
-    .portfolio-container{
-        gap: 1.5rem;
-        grid-template-columns: repeat(2,1fr);
-    } */
     
 }
 
 @media (max-width: 991px){
-    /* .header{
-        padding: 1em 1%;
-    }
-
-    .about{
-        flex-direction: column;
-    }
-    
-    section{
-        padding: 10rem 3% 2rem;
-    }
-
-    .services{
-        padding-bottom: 7rem;
-    }
-
-    .contact{
-        min-height: auto;
-        padding-top: 2em;
-    }
-
-    .footer{
-        padding: 2rem 3%;
-    }
-
-    .about img{
-        margin-right: 0;
-    } */
 
 }
 
@@ -901,199 +855,20 @@ span{
         margin: 2em 0;
     }
 
-    .home{
-        flex-direction: column;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .about{
-        flex-direction: column;
-    }
-
-    .about-img img{
-        width: 40vw;
-        margin-top: 4rem;
-        margin-right: 0;
-    }
-
-    .services h2{
-        margin-bottom: 3rem;
-    }
-
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-
-    .img-cont{
-        display: none;
-    }
-
 }
 
 @media (max-width: 617px){
-
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-
-    .about-img img{
-        width: 50vw;
-        margin: 0;
-    }
-
-    .footer{
-        justify-content: center;
-    }
-
-    .portfolio{
-        padding: .5em;
-    }
-
-    .footer{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu-footer{
-        margin: 1em 0;
-    }
 
 }
 
 @media (max-width: 450px){
 
-    .portfolio{
-        padding-top: 2em;
-        scroll-margin-top: 8vh;
-    }
-    
-    .portfolio-layer{
-        padding: 0 .5em;
-    }
-
-    .portfolio-container{
-        width: 100%;
-        padding: 0 2%;
-    }
-
-    .contact{
-        scroll-margin-top: 8vh;
-    }
-
-
-    .title-container{
-        margin-bottom: 1em;
-    }
-
-    .certificates-box{
-        padding: 1.2em;
-    }
-
-    .certificates-container .certificates-box:nth-child(2),
-    .certificates-container .certificates-box:nth-child(3),
-    .certificates-container .certificates-box:nth-child(4){
-        grid-column-start: 1;
-        grid-column-end: 4;
-        width: 85%;
-        place-items: center;
-        justify-self: center;
-    }
-
-    .tech{
-        width: 12%;
-    }
-
-    .about-img img{
-        width: 50vw;
-        margin: 0;
-    }
-
-    .skills-title h2{
-        margin: 1.5em 0;
-    }
-
-    .home-content{
-        position: relative;
-    }
-
-    .social-media{
-        position: absolute;
-        inset: 0;
-        top: 135px;
-    }
-
-    .skills-title h2, .certificates-title h2{
-        text-align: center;
-    }
-
-    .portfolio-box{
-        height: 350px;
-    }
-
-    .portfolio-box img{
-        object-fit: cover;
-    }
-
-    .techs-used-container{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tech-item{
-        border-radius: .6em;
-        margin: .2em 0;
-    }
-
-    .links-container a{
-        margin: 0;
-    }
-
-    .menu-footer{
-        display: flex;
-    }
-
 }
 
 @media (max-width: 375px){
 
-    .certificates-container .certificates-box:nth-child(2),
-    .certificates-container .certificates-box:nth-child(3),
-    .certificates-container .certificates-box:nth-child(4){
-        width: 95%;
-    }
-
-    .portfolio-layer h1{
-        padding: 0;
-    }
-
-    .portfolio-layer p,
-    .tech-name{
-        padding: 0;
-    }
-
-    .about-img img{
-        margin-top: 0;
-        width: 60vw;
-    }
-
-    .social-media{
-        position: absolute;
-        inset: 0;
-        top: 175px;
-    }
-
 }
 
 @media (max-width: 320px){
-    .portfolio-container{
-        width: 300px;
-    }
+
 }
