@@ -257,10 +257,6 @@ span {
     margin: 0 auto;
 }
 
-.about-content {
-    margin: 0 3rem;
-}
-
 .title-container {
     display: flex;
     text-align: center;
@@ -545,10 +541,12 @@ span {
     text-align: center;
 }
 
+/* FLIP CARDS */
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
     margin: 3rem 0;
 }
@@ -613,7 +611,6 @@ span {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 1s;
     transition-property: transform, opacity;
-    /* border: 1px solid red; */
     box-shadow: 10px 10px 12px rgb(0, 0, 0);
     border: 1px solid rgba(184, 184, 184, 0.338);
 }
@@ -625,11 +622,13 @@ span {
 .flip>.back {
     position: absolute;
     opacity: 0;
+    /* opacity: 1; */
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     transform: rotateY(-180deg);
+    /* transform: rotateY(-180deg); */
 }
 
 .flip:hover>.front {
@@ -643,6 +642,7 @@ span {
 
 .flip.flip-vertical>.back {
     transform: rotateX(-180deg);
+    /* transform: rotateX(-180deg); */
 }
 
 .flip.flip-vertical:hover>.front {
@@ -674,7 +674,7 @@ span {
     border-radius: 10px;
 }
 
-.flip>.front{
+.flip>.front {
     justify-content: flex-end;
 }
 
@@ -697,18 +697,90 @@ span {
         url('/images/maintenance.jpg');
 }
 
-.back p:last-of-type{
+.back p:nth-last-of-type(3) {
     margin-top: 1rem;
-    font-style: italic;
     text-align: center;
-    color: rgb(255, 234, 0);
+    color: rgb(0, 255, 34);
+}
+
+.back p:last-of-type,
+.back p:nth-last-of-type(2) {
+    margin: 0;
+    text-align: center;
 }
 
 .card-button {
     align-self: center;
-    margin: 1rem 0 0 0;    letter-spacing: 1px;
+    margin: 1rem 0 0 0;
+    letter-spacing: 1px;
     padding: .7rem 2rem;
     font-size: 1.1rem;
+}
+
+/* TERMINOS DEL SERVICIO ACORDEON */
+
+
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 700px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #333;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #272727;
+}
+
+.accordion-header span {
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #252525;
+    transition: max-height 0.4s ease;
+    padding: 0 1.2rem;
+}
+
+.accordion-content p {
+    padding: 1rem 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    /* ajustá según contenido */
+}
+
+.accordion-item.active .accordion-header span {
+    transform: rotate(90deg);
 }
 
 
