@@ -180,11 +180,22 @@ const items = document.querySelectorAll('.accordion-item');
 
 items.forEach(item => {
     const header = item.querySelector('.accordion-header');
+    const flecha = item.querySelector('span')
+
     header.addEventListener('click', () => {
     const openItem = document.querySelector('.accordion-item.active');
     if (openItem && openItem !== item) {
+
         openItem.classList.remove('active');
+        const openFlecha = openItem.querySelector('span');
+        openFlecha.textContent ='+'
     }
     item.classList.toggle('active');
+    flecha.textContent = item.classList.contains('active') ? '-' : '+';
     });
 });
+
+
+
+
+

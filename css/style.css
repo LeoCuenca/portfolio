@@ -541,6 +541,13 @@ span {
     text-align: center;
 }
 
+.services-intro{
+    display: inline-block;
+    text-align: center;
+    font-size: clamp(1rem, 0.945rem + 0.353vw, 1.6rem);
+    margin: 0 8% .5em 8%;
+}
+
 /* FLIP CARDS */
 
 .card-container {
@@ -719,73 +726,91 @@ span {
 
 /* TERMINOS DEL SERVICIO ACORDEON */
 
-
-.accordion-container{
+.accordion-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .accordion {
     width: 100%;
-    max-width: 700px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 750px;
+    /* background: #1e1e1e00; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); */
     overflow: hidden;
 }
 
 .accordion-item {
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
+    /* margin: .7rem; */
+    transition: all .5s ease;
+}
+
+.accordion-item.active .accordion-header{
+    background: linear-gradient(135deg, #000000, #313131);
+    color: rgb(6, 230, 255);
 }
 
 .accordion-header {
     cursor: pointer;
-    padding: 1.2rem;
+    padding: .5rem 1.5rem;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1e1e1e;
-    transition: background 0.3s ease;
+    background: linear-gradient(135deg, #313131, #000000);
+    transition: background .5s ease;
+    border-radius: 5px;
+    border: 1px solid rgba(89, 89, 89, 0.451);
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
-.accordion-header:hover {
-    background: #272727;
+.accordion-header:hover{
+    color: rgb(6, 230, 255);
+    /* text-shadow: 2px 2px 5px rgb(119, 119, 119); */
+    transition: all .5s ease;
 }
 
 .accordion-header span {
-    transition: transform 0.3s ease;
+    font-size: 2rem;
 }
 
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    background: #252525;
+    background: #121212;
     transition: max-height 0.4s ease;
+    margin: .3rem 0;
     padding: 0 1.2rem;
+    border-radius: 5px;
+    transition: all .5s ease;   
 }
 
 .accordion-content p {
-    padding: 1rem 0;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 0.95rem;
-    color: #ccc;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+}
+
+.accordion-item:nth-child(2) .accordion-content p:nth-child(1){
+    margin-bottom: .5rem;
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 200px;
-    /* ajustá según contenido */
+    max-height: 400px;
+    padding: 2rem 1.2rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(152, 152, 152, 0.317);
+
 }
 
 .accordion-item.active .accordion-header span {
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
+    font-size: 2rem;
 }
-
-
-
-
 
 /*====================================================================================================*/
 /*================================== PORTFOLIO SECTION STYLES ========================================*/
@@ -802,6 +827,7 @@ span {
     display: inline-block;
     text-align: center;
     font-size: clamp(1rem, 0.945rem + 0.353vw, 1.6rem);
+    margin: 0 8% .5em 8%;
 }
 
 .project-container {
