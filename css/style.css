@@ -615,7 +615,7 @@ span {
 
 .flip>.front,
 .flip>.back {
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.3, 0.23, 1.275);
     transition-duration: 1s;
     transition-property: transform, opacity;
     box-shadow: 10px 10px 12px rgb(0, 0, 0);
@@ -676,7 +676,7 @@ span {
     color: white;
     background-size: cover !important;
     background-position: center !important;
-    height: 520px;
+    min-height: 550px;
     padding: 1em;
     border-radius: 10px;
 }
@@ -704,14 +704,20 @@ span {
         url('/images/maintenance.jpg');
 }
 
-.back p:nth-last-of-type(3) {
-    margin-top: 1rem;
+.flip:nth-child(1) .back p:nth-last-of-type(3),
+.flip:nth-child(2) .back p:nth-last-of-type(3),
+.flip:nth-child(3) .back p:nth-last-of-type(3) {
+    margin: 1rem 0;
     text-align: center;
     color: rgb(0, 255, 34);
 }
 
-.back p:last-of-type,
-.back p:nth-last-of-type(2) {
+.flip:nth-child(1) .back p:last-of-type,
+.flip:nth-child(1) .back p:nth-last-of-type(2),
+.flip:nth-child(2) .back p:nth-last-of-type(1),
+.flip:nth-child(2) .back p:nth-last-of-type(2),
+.flip:nth-child(3) .back p:nth-last-of-type(2),
+.flip:nth-child(3) .back p:nth-last-of-type(1) {
     margin: 0;
     text-align: center;
 }
@@ -733,6 +739,16 @@ span {
     align-items: center;
     margin-bottom: 3rem;
 }
+
+.accordion-title{
+
+}
+
+.accordion-intro{
+    
+}
+
+
 
 .accordion {
     width: 100%;
