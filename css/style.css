@@ -741,14 +741,28 @@ span {
 }
 
 .accordion-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.accordion-line{
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: #00bcd4;
+    margin: 1rem auto;
+    border-radius: 2px;
 }
 
 .accordion-intro{
-    
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 10% 1.5em 10%;
 }
-
-
 
 .accordion {
     width: 100%;
