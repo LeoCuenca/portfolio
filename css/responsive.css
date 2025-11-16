@@ -1,0 +1,151 @@
+@media (max-width: 1650px) {
+
+    .card-container{
+        grid-template-columns: repeat(1, minmax(250px, .5fr));
+        justify-content: center;
+    }
+    
+
+}
+
+@media (max-width: 1250px) {
+
+
+
+
+    .about-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    .project-container{
+        margin: 3rem;
+    }
+
+    .info-description{
+        text-align: center;
+    }
+
+    .services-intro{
+        margin: 0 5% .5rem 5%;
+    }
+
+    .linea{
+        margin: 1.5rem auto;
+    }
+
+    .services{
+        margin: 0 2rem;
+    }
+
+
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 8vh;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: -110vh;
+        width: 100%;
+        padding: 1rem 3%;
+        background: linear-gradient(to right, #141414, #232526);
+        border-top: .1em solid rgba(0, 0, 0, .2);
+        border-bottom: .2em solid rgba(0, 225, 255, 0.365);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        opacity: 0;
+        pointer-events: none; /* desactivado cuando está cerrado */
+    }
+
+    .social-bar{
+        display: none;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-100vh);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(108vh);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(108vh);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-100vh);
+        }
+    }
+
+    .navbar.active {
+        display: block;
+        padding-top: 2.5rem;
+        animation: slideDown 1s forwards ease;
+        pointer-events: auto;
+    }
+
+    .navbar.closing {
+        display: block;
+        animation: slideUp 2s forwards ease;
+    }
+
+    .active-icon {
+        position: relative;
+        z-index: 10000;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2em 0;
+    }
+
+    
+}
+@media (max-width: 617px) {
+}
+
+@media (max-width: 450px) {
+
+    .home-title{
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .home-multiple{
+        min-height: 130px;
+    }
+
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 360px) {
+}
+

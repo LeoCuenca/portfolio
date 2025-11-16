@@ -4,8 +4,23 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
+    
+    if (navbar.classList.contains('active')) {
+        // Está abierto → cerrar con animación
+        navbar.classList.remove('active');
+        navbar.classList.add('closing');
+
+        // esperar a que termine la animación
+        setTimeout(() => {
+            navbar.classList.remove('closing');
+        }, 1000); // mismo tiempo que los keyframes
+    } else {
+        // Está cerrado → abrir normal
+        navbar.classList.add('active');
+    }
+
     menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('active-icon');
 };
 
 /*==================== Scroll Sections Active Link ====================*/
@@ -160,7 +175,6 @@ document.addEventListener("mousemove", (e) => {
 
 
 // Carrousel rotation
-
 
 const sliders = document.querySelectorAll('.slider');
 
