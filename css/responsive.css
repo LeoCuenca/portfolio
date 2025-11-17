@@ -253,5 +253,9 @@
         justify-content: center;
     }
 
+    .scroll-down{
+        margin-bottom: 60px;
+    }
+
 }
 
