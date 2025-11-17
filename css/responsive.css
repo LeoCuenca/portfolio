@@ -257,5 +257,10 @@
         margin-bottom: 60px;
     }
 
+    .home{
+        align-items: flex-start;
+        padding-top: 8rem;
+    }
+
 }
 
