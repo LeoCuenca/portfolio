@@ -198,10 +198,10 @@
         line-height: 1.6;
     }
 
-    .flip>.front,
+    /* .flip>.front,
     .flip>.back {
         justify-content: center;
-    }
+    } */
 
     .contact form {
         max-width: 70%;
@@ -214,6 +214,20 @@
     .title-contact-container{
         margin-bottom: 1rem;
     }
+
+    .show .go-top-button{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .go-top-button i{
+        font-size: 2.3rem;
+    }
+
+    .go-top-container {
+        bottom: 1rem;
+    }
+
 
 }
 
@@ -264,7 +278,7 @@
     .flip>.front,
     .flip>.back {
         width: 350px;
-        height: 725px;
+        height: 600px;
         justify-content: center;
     }
 
@@ -290,5 +304,16 @@
         max-width:90%;
     }
 
+    .item{
+        font-size: .9rem;
+    }
+
+    .back-info {
+        font-size: .9rem;
+    }
+
+    .back-items {
+        margin-left: .5rem;
+    }
 }
 

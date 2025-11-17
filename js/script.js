@@ -44,26 +44,50 @@ window.onscroll = () => {
     });
 
 /*==================== Sticky Navbar ====================*/
-    
+
 const header = document.querySelector('header');
-const about = document.querySelector('.about')
-const service = document.querySelector('.services')
-const portfolio = document.querySelector('.portfolio')
+const about = document.querySelector('.about');
+const services = document.querySelector('.services');
+const portfolio = document.querySelector('.portfolio');
+const goTop = document.querySelector('.go-top-container');
 
-header.classList.toggle('sticky', window.scrollY > 250);
+// Scroll
 
-window.addEventListener('resize', () =>{
-    if (window.innerWidth <= 768){
-        about.classList.add('mobile-scroll-margin-top')
-        service.classList.add('mobile-scroll-margin-top')
-        portfolio.classList.add('mobile-scroll-margin-top')
-    }
-    else{
-        about.classList.remove('mobile-scroll-margin-top')
-        service.classList.remove('mobile-scroll-margin-top')
-        portfolio.classList.remove('mobile-scroll-margin-top')
+window.addEventListener('scroll', () => {
+    header.classList.toggle('sticky', window.scrollY > 250);
+
+    let windowSize = window.innerHeight;
+
+    if (document.documentElement.scrollTop > (windowSize - 250)) {
+        goTop?.classList.add('show');
+    } else {
+        goTop?.classList.remove('show');
     }
 });
+
+// Resize
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+        about?.classList.add('mobile-scroll-margin-top');
+        services?.classList.add('mobile-scroll-margin-top');
+        portfolio?.classList.add('mobile-scroll-margin-top');
+    } else {
+        about?.classList.remove('mobile-scroll-margin-top');
+        services?.classList.remove('mobile-scroll-margin-top');
+        portfolio?.classList.remove('mobile-scroll-margin-top');
+    }
+});
+
+// Back to top
+
+goTop?.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 
 /*==================== Remove Toggle Icon And Navbar When Click Navbar Link (Scroll) ====================*/
 
@@ -220,8 +244,3 @@ items.forEach(item => {
     flecha.textContent = item.classList.contains('active') ? '-' : '+';
     });
 });
-
-
-
-
-
