@@ -60,6 +60,9 @@
         grid-column: auto;
     }
 
+    .contact form {
+        max-width: 60%;
+    }
 
 }
 
@@ -200,6 +203,18 @@
         justify-content: center;
     }
 
+    .contact form {
+        max-width: 70%;
+    }
+
+    .contact-intro{
+        margin-bottom: 1rem;
+    }
+
+    .title-contact-container{
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -260,6 +275,19 @@
     .home{
         align-items: flex-start;
         padding-top: 8rem;
+    }
+
+    .contact-intro{
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .heading-contact{
+        font-size: 1.5rem;
+    }
+
+    .contact form {
+        max-width:90%;
     }
 
 }

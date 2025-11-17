@@ -2,13 +2,8 @@
     "navbar":{
         "home": "Inicio",
         "aboutNav": "Sobre mi",
+        "services": "Servicios",
         "contact": "Contacto"
-    },
-
-    "home":{
-        "hi": "Hola, soy",
-        "description": "Soy un apasionado desarrollador, con una solida experiencia en diferentes lenguajes, asi como en diferentes ámbitos. Actualmente me encuentro en busca de mi primera experiencia laboral en el mundo del desarrollo.",
-        "read": "Leer mas"
     },
 
     "about":{

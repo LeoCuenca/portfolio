@@ -2,13 +2,8 @@
     "navbar":{
         "home": "Home",
         "aboutNav": "About Me",
+        "services": "Services",
         "contact": "Contact"
-    },
-
-    "home":{
-        "hi": "Hi, I'm",
-        "description": "Passionate developer, with solid experience in different languages, as well as in different areas. I'm currently looking for my first work experience in the world of development.",
-        "read": "Read More"
     },
 
     "about":{
