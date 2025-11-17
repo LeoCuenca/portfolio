@@ -760,6 +760,7 @@ span {
     letter-spacing: 1px;
     padding: .7rem 2rem;
     font-size: 1.1rem;
+    font-size: clamp(0.9rem, 0.866rem + 0.146vw, 1.1rem);
 }
 
 /* TERMINOS DEL SERVICIO ACORDEON */

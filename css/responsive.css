@@ -261,6 +261,10 @@
         margin: 0 1rem 2rem 1rem;
     }
 
+    .flip{
+        margin: 0;
+    }
+
     .linea{
         margin: 1rem auto;
     }
@@ -275,7 +279,7 @@
 
     .flip>.front,
     .flip>.back {
-        width: 350px;
+        width: 325px;
         height: 600px;
         justify-content: center;
     }
@@ -313,5 +317,11 @@
     .back-items {
         margin-left: .5rem;
     }
+
+    .card-button{
+        padding: .6rem .5rem;
+    }
+
+
 }
 
