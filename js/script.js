@@ -43,15 +43,32 @@ window.onscroll = () => {
         }
     });
 
-    /*==================== Sticky Navbar ====================*/
+/*==================== Sticky Navbar ====================*/
     
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 250);
+const header = document.querySelector('header');
+const about = document.querySelector('.about')
+const service = document.querySelector('.services')
+const portfolio = document.querySelector('.portfolio')
 
-    /*==================== Remove Toggle Icon And Navbar When Click Navbar Link (Scroll) ====================*/
-    
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+header.classList.toggle('sticky', window.scrollY > 250);
+
+window.addEventListener('resize', () =>{
+    if (window.innerWidth <= 768){
+        about.classList.add('mobile-scroll-margin-top')
+        service.classList.add('mobile-scroll-margin-top')
+        portfolio.classList.add('mobile-scroll-margin-top')
+    }
+    else{
+        about.classList.remove('mobile-scroll-margin-top')
+        service.classList.remove('mobile-scroll-margin-top')
+        portfolio.classList.remove('mobile-scroll-margin-top')
+    }
+});
+
+/*==================== Remove Toggle Icon And Navbar When Click Navbar Link (Scroll) ====================*/
+
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
 
 };
 
@@ -61,11 +78,6 @@ ScrollReveal().reveal('.home-title', { origin: 'top', reset:true, distance:'80px
 ScrollReveal().reveal('.home-multiple', { origin: 'bottom', reset:true, distance:'80px', delay:100, duration:1000 });
 ScrollReveal().reveal('.social-bar', { origin: 'left', reset:true, distance:'80px', delay:1000, duration:2000 });
 ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:2000, duration:1500 });
-
-// ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
-// ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left', reset:true, distance:'80px', delay:200, duration:2000 });
-// ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right', reset:true, distance:'80px', delay:200, duration:2000 });
-// ScrollReveal().reveal('.scroll-down', { origin: 'bottom', reset:true, distance:'80px', delay:200, duration:2000 });
 
 /*==================== Scroll Reveal Intercalado Skills ====================*/
 

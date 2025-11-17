@@ -287,10 +287,11 @@ span {
 }
 
 .heading,
+.portfolio-title,
 .title-container span,
 .about-title span,
 .heading-contact {
-    font-size: clamp(2.5rem, 1.5rem + 1.248vw, 3.5rem);
+    font-size: clamp(2rem, 1.5rem + 1.248vw, 3.5rem);
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -319,7 +320,7 @@ span {
     display: inline-block;
     text-align: center;
     font-size: clamp(1rem, 0.945rem + 0.353vw, 1.6rem);
-    margin: 0 8% 3em 8%;
+    margin: 0 4rem 3em 4rem;
 }
 
 .about-container {
@@ -387,7 +388,7 @@ span {
     transition: .5s ease;
     position: relative;
     overflow: hidden;
-    margin: 3rem 5rem;
+    margin: 3rem 5rem 0;
     z-index: 1;
 }
 
@@ -564,7 +565,7 @@ span {
 }
 
 .services-title {
-    font-size: clamp(2.5rem, 1.5rem + 1.248vw, 3.5rem);
+    font-size: clamp(2rem, 1.5rem + 1.248vw, 3.5rem);
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -652,7 +653,7 @@ span {
     transition-property: transform, opacity;
     box-shadow: 10px 10px 12px rgb(0, 0, 0);
     border: 1px solid rgba(184, 184, 184, 0.338);
-    min-width: 500px;
+    width: 500px;
 }
 
 .flip>.front {
@@ -917,7 +918,7 @@ span {
     display: block;
     position: relative;
     z-index: 2;
-    min-width: 640px;
+    /* min-width: 640px; */
 }
 
 .screen {
@@ -943,8 +944,8 @@ span {
     height: 100%;
     object-fit: cover;
     flex: 0 0 100%;
-    overflow-clip-margin: content-box;
     overflow: clip;
+    overflow-clip-margin: content-box;
 }
 
 .project-info-container {
@@ -1030,6 +1031,15 @@ span {
     justify-content: center;
     margin-bottom: 1.5em;
     height: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-intro{
+    display: inline-block;
+    text-align: center;
+    font-size: clamp(1rem, 0.945rem + 0.353vw, 1.6rem);
+    margin: 0 8% 3em 8%;
 }
 
 #cont-en,
