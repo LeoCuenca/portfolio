@@ -1,0 +1,107 @@
+/* WhatsApp Icon */
+
+/* .whatsapp-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    animation: floatImageServ 2s ease-in-out infinite;
+    animation-delay: 3s;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.whatsapp-button img {
+    width: 70px;
+    height: auto;  
+}
+
+@keyframes floatImageServ{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+} */
+
+/* <!-- Go Top Button --> */
+
+.go-top-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: .2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+    transition: .2s;
+}
+
+
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #064e8d63;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s;
+    z-index: -1;
+}
+
+.go-top-button:hover{
+    background: rgba(0, 225, 255, 0.315);
+    transition: all .5s;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 3.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(255, 255, 255, 0.664);
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 100000;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        opacity: 0;
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50%{
+        opacity: .5;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    100%{
+        opacity: 1;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+
+

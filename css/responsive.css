@@ -198,11 +198,6 @@
         line-height: 1.6;
     }
 
-    /* .flip>.front,
-    .flip>.back {
-        justify-content: center;
-    } */
-
     .contact form {
         max-width: 70%;
     }
@@ -227,8 +222,6 @@
     .go-top-container {
         bottom: 1rem;
     }
-
-
 }
 
 @media (max-width: 500px) {
@@ -246,13 +239,18 @@
     }
 
     .card-button{
-        width: 100%;
+        width: 90%;
     }
 
     .services,
     .portfolio,
     .about-container{
         margin: 0 1rem;
+    }
+
+    .contact form{
+        margin: 0 auto;
+        max-width: 90%;
     }
     
 }
