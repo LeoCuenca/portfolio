@@ -237,14 +237,11 @@ section {
     font-weight: 700;
     text-align: center;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    color: var(--main-color);
 }
 
 .social-media {
     display: flex;
-}
-
-span {
-    color: var(--main-color);
 }
 
 .blur-in {
@@ -1005,7 +1002,7 @@ span {
 
 .contact {
     user-select: none;
-    min-height: 100vh;
+    min-height: 80vh;
     scroll-margin-top: 5rem;
 }
 
@@ -1023,7 +1020,16 @@ span {
     display: inline-block;
     text-align: left;
     font-size: clamp(1rem, 0.945rem + 0.353vw, 1.6rem);
-    margin: 0 8% 3em 8%;
+    margin: 0 8% 1em 8%;
+}
+
+.contact-intro span a{
+    color: var(--main-color);
+    transition: color .5s ease;
+}
+
+.contact-intro span a:hover{
+    color: rgb(0, 255, 21);
 }
 
 #cont-en,
@@ -1111,47 +1117,29 @@ span {
     background: var(--bg-color);
 }
 
-.footer-text {
+
+.menu-footer{
     display: flex;
     flex-direction: row;
+
 }
 
-.footer-text p {
-    font-size: clamp(1rem, 0.908rem + 0.745vw, 1.3rem);
+.menu-footer a{
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;    
 }
 
-.menu-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: none;
+.menu-footer a img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+    /* filter: invert(55%) sepia(93%) saturate(2000%) hue-rotate(160deg) brightness(105%) contrast(98%); */
+    opacity: 0.5;
+    transition: opacity .5s ease;
 }
 
-.footer-menu-item {
-    margin: .2em;
-    text-decoration: none;
-    color: white;
-}
-
-.footer-iconTop a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
-}
-
-.footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-.footer-iconTop a i {
-    font-size: clamp(1.3rem, 1.221rem + 0.362vw, 1.8rem);
-    color: var(--second-bg-color);
-}
-
-.hidden {
-    display: none;
+.menu-footer a:hover img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
 }

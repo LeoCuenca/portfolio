@@ -256,14 +256,17 @@
     .info-description{
         text-align: center;
     }
-    
-}
-
-@media (max-width: 375px) {
 
     .about-intro{
         margin: 0 1rem 2rem 1rem;
     }
+
+    .contact-intro{
+        margin: 0 1rem 1rem 1rem;
+    }
+}
+
+@media (max-width: 375px) {
 
     .flip{
         margin: 0;
@@ -325,7 +328,6 @@
     .card-button{
         padding: .6rem .5rem;
     }
-
 
 }
 
