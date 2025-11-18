@@ -252,6 +252,10 @@
         margin: 0 auto;
         max-width: 90%;
     }
+
+    .info-description{
+        text-align: center;
+    }
     
 }
 
