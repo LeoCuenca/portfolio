@@ -1,5 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Slab:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tinos:ital@1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/fonts/Roboto_Slab/Woff/RobotoSlab-Bold.woff2') format('woff2'),
+        url('/fonts/Roboto_Slab/Woff/RobotoSlab-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-Thin.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-ExtraLight.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-Light.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-Regular.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-Medium.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Elms Sans';
+    src: url('/fonts/Elms_Sans/WOFF/ElmsSans-Bold.woff2') format('woff2'),
+        url('/fonts/Elms_Sans/WOFF/ElmsSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 * {
     margin: 0;
@@ -214,9 +287,9 @@ body {
 
 .home-title {
     font-size: clamp(3rem, 1.927rem + 2.545vw, 6rem);
-    font-weight: 700;
     line-height: 1.3;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
     letter-spacing: 7px;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -226,7 +299,6 @@ body {
 
 .home-multiple {
     font-size: clamp(1.8rem, 1.657rem + 0.952vw, 2.7rem);
-    font-weight: 700;
     text-align: center;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     color: var(--main-color);
@@ -268,7 +340,7 @@ body {
 
 .about-title {
     font-size: clamp(1.7rem, 1.391rem + 1.318vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
@@ -299,6 +371,7 @@ body {
 }
 
 .about-text {
+    line-height: 1.4;
     font-weight: 200;
     font-size: clamp(1rem, 0.945rem + 0.301vw, 1.35rem);
 }
@@ -350,7 +423,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px var(--main-color);
     font-size: clamp(1rem, 0.921rem + 0.362vw, 1.5rem);
-    font-weight: bold;
+    font-weight: 700;
     color: var(--second-bg-color);
     letter-spacing: 3px;
     transition: .5s ease;
@@ -395,7 +468,7 @@ body {
 
 .services-title {
     font-size: clamp(1.7rem, 1.391rem + 1.318vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
@@ -586,7 +659,7 @@ body {
 .accordion-title{
     display: block;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
@@ -695,7 +768,7 @@ body {
 
 .portfolio-title{
     font-size: clamp(1.7rem, 1.391rem + 1.318vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
@@ -781,7 +854,7 @@ body {
 .info-description {
     margin: 1rem 0;
     font-size: clamp(0.85rem, 0.807rem + 0.183vw, 1.1rem);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .project-links {
@@ -827,7 +900,7 @@ body {
 
 .contact-title{
     font-size: clamp(1.7rem, 1.391rem + 1.318vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
