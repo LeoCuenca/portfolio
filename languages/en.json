@@ -7,32 +7,12 @@
     },
 
     "about":{
-        "aboutTitle": "About",
-        "me": " Me",
-        "p1": "I have developed my entire professional life in administrative fields, until I decided in 2020 to change my life and start studying something that I have always really liked and caught my attention, which is programming in general.",
-        "p2": "I'm currently 7 subjects away from receiving a University Technician in Programming at the National Technological University.",
-        "p3": "Characterized by being a persevering person in the face of any challenge in the workplace, always trying to provide solutions to the problems raised.",
-        "cv": "Download CV",
-        "tech": "Skills",
-        "certs": "Certifications",
-        "wide": "Ver",
-        "pc": "PC Assembly And Repair"
-    },
-
-    "portfolio":{
-        "some": "My",
-        "projects": " Work",
-        "projName1": "Personal Portfolio",
-        "projDescription1": "My portfolio is a collection of web projects developed with HTML, CSS, and JavaScript, showcasing my ability to create attractive and functional websites. Each project displays a unique and creative approach, demonstrating my skill in designing and coding captivating digital experiences.",
-        "projName2": "The Witcher Fan Page",
-        "projDescription2": "Project completed as the final assignment for the Laboratory III course of the University Degree in Programming [UTN]. The project was entirely developed individually.",
-        "projName3": "A&C Seguros",
-        "projDescription3": "Website created for a small or medium-sized enterprise (SME) operating in the property insurance sector.",
-        "projName4": "Nutritionist Carla Cuenca",
-        "projDescription4": "Website project created for a professional nutritionist, with several proposed changes for the future. This is an initial version of the site.",
-        "projName5": "",
-        "projDescription5": "",
-        "projName6": "",
-        "projDescription6": ""
+        "title": "About me",
+        "intro": "Here you’ll find more about who I am, the work I do, and the programming and technology skills I currently offer.",
+        "subtitle": "A glimpse into my journey",
+        "p1": "I’m Leonel, a frontend developer and programming instructor. After several years working in administrative roles, I discovered my true passion in 2020: technology and software development. Since then, I’ve continued to train and grow professionally, and today I specialize in web development, structured programming, and object-oriented programming.",
+        "p2": "I currently work as a high school programming teacher, guiding students through their first steps in the world of software development. I enjoy combining my technical background with a strong pedagogical approach, always aiming to explain concepts in a clear and accessible way.",
+        "p3": "As a frontend developer, my goal is to build modern, responsive, and high-performing websites designed to deliver a seamless and professional user experience. I aim to support individuals, entrepreneurs, and brands looking to enhance their digital presence with clean, reliable, and fully tailored solutions.",
+        "skills": "My skills"
     }
 }

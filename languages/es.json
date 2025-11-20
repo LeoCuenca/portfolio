@@ -7,32 +7,13 @@
     },
 
     "about":{
-        "aboutTitle": "Sobre",
-        "me": " Mi",
-        "p1": "He desarrollado toda mi vida profesional en ámbitos administrativos, hasta que decidí en 2020, dar un giro a mi vida y empezar a estudiar algo que realmente siempre me gusto y me llamo la atención, que es la programación en general.",
-        "p2": "Actualmente me encuentro a 7 materias de recibirme de Técnico Universitario en Programación en la Universidad Tecnológica Nacional.",
-        "p3": "Me caracterizo por ser una persona perseverante ante cualquier desafío en el ámbito laboral, tratando siempre de dar soluciones a los problemas planteados.",
-        "cv": "Descargar CV",
-        "tech": "Tecnologías",
-        "certs": "Certificaciones",
-        "wide": "Ver",
-        "pc": "Armado y Reparación de PC"
-    },
-
-    "portfolio":{
-        "some": "Mis",
-        "projects": " Projectos",
-        "projName1": "Portfolio Personal",
-        "projDescription1": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras.",
-        "projName2": "The Witcher Fan Page",
-        "projDescription2": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. La misma fue desarrollada íntegramente de manera individual.",
-        "projName3": "A&C Seguros",
-        "projDescription3": "Pagina web realizada para una PYME que se dedica al rubro del seguro patrimonial.",
-        "projName4": "Nutricionista Carla Cuenca",
-        "projDescription4": "Proyecto web realizado para una nutricionista, con varios cambios propuestos a futuro, esta es una primera version del sitio.",
-        "projName5": "",
-        "projDescription5": "",
-        "projName6": "",
-        "projDescription6": ""
+        "title": "Sobre mi",
+        "intro": "Aca vas a encontrar mas información sobre mí, lo que hago, y las habilidades que actualmente manejo en terminos de programación y tecnología.",
+        "subtitle": "Un poco de mi historia",
+        "p1": "Soy Leonel, desarrollador frontend y docente de programación. Después de varios años trabajando en áreas administrativas, en 2020 descubrí mi verdadera vocación: la tecnología y el desarrollo de software. Desde entonces me formé de manera continua y hoy me especializo en desarrollo web, programación estructurada y programación orientada a objetos.",
+        "p2": "Actualmente trabajo como profesor en un colegio secundario, donde acompaño a jóvenes en sus primeros pasos dentro del mundo de la programación. Disfruto combinar mi experiencia técnica con una mirada pedagógica, buscando siempre transmitir los conceptos de forma clara y accesible.",
+        "p3": "Como desarrollador frontend, mi objetivo es crear sitios modernos, responsivos y funcionales, diseñados para ofrecer una experiencia intuitiva y profesional. Busco acercar mis servicios a personas, emprendimientos y marcas que deseen fortalecer su presencia digital con soluciones sólidas, prolijas y adaptadas a sus necesidades.",
+        "skills": "Mis habilidades"
     }
+
 }
