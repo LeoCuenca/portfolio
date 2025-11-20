@@ -145,10 +145,19 @@ const changeLanguage = async language => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
 
-    for (const textToChange of textsToChange){
-        const section = textToChange.dataset.section;
-        const value = textToChange.dataset.value;
-        textToChange.innerHTML = texts[section][value];
+    for (const textToChange of textsToChange) {
+
+        // Obtener TODOS los data-attributes en orden
+        const keys = Object.values(textToChange.dataset);
+        // ej: ["home", "header", "card", "title"]
+
+        // Navegar dinámicamente por el JSON
+        let value = texts;
+        for (const k of keys) {
+            value = value?.[k];  // optional chaining por seguridad
+        }
+
+        textToChange.innerHTML = value ?? "";
     }
 };
 

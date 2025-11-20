@@ -14,6 +14,46 @@
         "p2": "Actualmente trabajo como profesor en un colegio secundario, donde acompaño a jóvenes en sus primeros pasos dentro del mundo de la programación. Disfruto combinar mi experiencia técnica con una mirada pedagógica, buscando siempre transmitir los conceptos de forma clara y accesible.",
         "p3": "Como desarrollador frontend, mi objetivo es crear sitios modernos, responsivos y funcionales, diseñados para ofrecer una experiencia intuitiva y profesional. Busco acercar mis servicios a personas, emprendimientos y marcas que deseen fortalecer su presencia digital con soluciones sólidas, prolijas y adaptadas a sus necesidades.",
         "skills": "Mis habilidades"
+    },
+
+    "services":{
+        "intro": "",
+        "card1":{
+            "title": "",
+            "p1": "",
+            "p2": "",
+            "li1": "",
+            "li2": "",
+            "li3": "",
+            "li4": "",
+            "li5": "",
+            "p3": "",
+            "p4": "",
+            "p5": "",
+            "btn": ""
+        },
+        "card2":{
+            "title": "",
+            "p1": "",
+            "p2": "",
+            "p3": "",
+            "p4": "",
+            "p5": "",
+            "btn": ""
+        },
+        "card3":{
+            "title": "",
+            "p1": "",
+            "p2": "",
+            "p3": "",
+            "p4": "",
+            "p5": "",
+            "btn": ""
+        },
+        "accordion":{
+            "title":""
+        }
+
     }
 
 }
