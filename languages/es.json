@@ -17,43 +17,55 @@
     },
 
     "services":{
-        "intro": "",
+        "title": "Servicios",
+        "intro": "Aca vas a encontrar los servicios que ofrezco para potenciar tu presencia digital. Cada proyecto se adapta a las necesidades del cliente, combinando diseño, funcionalidad y rendimiento para lograr resultados profesionales.",
         "card1":{
-            "title": "",
-            "p1": "",
-            "p2": "",
-            "li1": "",
-            "li2": "",
-            "li3": "",
-            "li4": "",
-            "li5": "",
-            "p3": "",
-            "p4": "",
-            "p5": "",
-            "btn": ""
+            "title": "Landing Page",
+            "p1": "Una landing page es un sitio de una sola sección diseñado para generar impacto y captar la atención del visitante desde el primer momento.",
+            "p2": "Es ideal para promocionar un producto, servicio o evento, o para crear presencia digital rápida y efectiva.",
+            "li1": "✔ Diseño responsive",
+            "li2": "✔ Animaciones suaves y modernas",
+            "li3": "✔ Optimización básica para SEO",
+            "li4": "✔ Integración con redes sociales o WhatsApp",
+            "li5": "✔ Hosting y dominio opcionales",
+            "p3": "💰 Desde USD 150",
+            "p4": "¿Querés una landing para tu negocio?",
+            "p5": "¿Tenes alguna duda?",
+            "btn": "Hablemos por WhatsApp"
         },
         "card2":{
-            "title": "",
-            "p1": "",
-            "p2": "",
-            "p3": "",
-            "p4": "",
-            "p5": "",
-            "btn": ""
+            "title": "Sitio Institucional",
+            "p1": "Un sitio institucional es la carta de presentación digital de tu marca o emprendimiento.",
+            "p2": "Diseño sitios modernos, claros y totalmente adaptables, pensados para reflejar tu identidad profesional, transmitir confianza y destacar lo mejor de tu propuesta.",
+            "p3": "Cada proyecto incluye un diseño personalizado (sin plantillas prediseñadas), optimización SEO básica, formularios funcionales y asistencia con dominio y hosting para dejar tu sitio 100% online, visible y listo para crecer.",
+            "p4": "💰 Desde USD 250",
+            "p5": "¿Querés mejorar la presencia digital de tu marca?",
+            "p6": "Escribime y te asesoro sin compromiso",
+            "btn": "Hablemos por WhatsApp"
         },
         "card3":{
-            "title": "",
-            "p1": "",
-            "p2": "",
-            "p3": "",
-            "p4": "",
-            "p5": "",
-            "btn": ""
+            "title": "Servicios Complementarios",
+            "p1": "Ofrezco mantenimiento, actualización de contenido, rediseño de sitios antiguos, optimización de velocidad, integración con formularios, y conexión con herramientas como Google Analytics o redes sociales.",
+            "p2": "Pensado para quienes ya tienen un sitio pero quieren mejorarlo o mantenerlo actualizado sin preocuparse por lo técnico.",
+            "p3": "💰 Desde USD 40 por servicio puntual",
+            "p4": "¿Querés mejorar tu web?",
+            "p5": "Contame qué necesitás y te asesoro sin compromiso.",
+            "btn": "Hablemos por WhatsApp"
         },
         "accordion":{
-            "title":""
+            "title":"Cómo trabajo",
+            "intro":"En esta parte te cuento cómo organizo cada proyecto: desde la modalidad de trabajo y las formas de pago, hasta la revisión final y la entrega del sitio publicado. Busco que cada etapa sea clara y sencilla, para que el resultado refleje exactamente lo que necesitás.",
+            "header1":"1. ⚙️ Modalidad de trabajo",
+            "p1":"Cada proyecto se realiza de forma personalizada, adaptado a las necesidades y objetivos del cliente. Antes de comenzar, se define el alcance, el contenido y los plazos de entrega.",
+            "header2":"2. 💳 Formas de pago ",
+            "p2":"El trabajo se realiza bajo la modalidad 50% por adelantado y 50% al finalizar el proyecto, antes de la publicación o entrega de los archivos finales.",
+            "p3":"Los pagos pueden realizarse en pesos argentinos (ARS) al tipo de cambio del día, o en dólares (USD) mediante los medios acordados (Transferencia / Mercado Pago).",
+            "header3":"3. 🛠️ Revisión y ajustes",
+            "p4":"Se incluyen una o dos rondas de ajustes menores (según el tipo de servicio) una vez presentado el diseño o la versión funcional del sitio. Los cambios fuera del alcance inicial pueden presupuestarse aparte.",
+            "header4":"4. 🌐 Hosting y dominio",
+            "p5":"El servicio de hosting y dominio puede gestionarse a través del desarrollador o directamente por el cliente. Si el hosting lo provee el desarrollador, se cobrará el costo correspondiente al plan elegido.",
+            "header5":"5. 🚀 Entrega final",
+            "p6":"La entrega final se realiza una vez abonado el total del proyecto. En caso de hosting propio del cliente, se entregan los archivos listos para subir. Si se contrata hosting administrado, el sitio se publica directamente."
         }
-
     }
-
 }

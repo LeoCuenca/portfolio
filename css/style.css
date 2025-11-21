@@ -751,11 +751,9 @@ body {
     padding: 2rem 1.2rem;
     margin: 1rem 0;
     border: 1px solid rgba(152, 152, 152, 0.317);
-
 }
 
 .accordion-item.active .accordion-header span {
-    /* transform: rotate(90deg); */
     font-size: 2rem;
 }
 

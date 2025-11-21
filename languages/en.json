@@ -14,8 +14,58 @@
         "p2": "I currently work as a high school programming teacher, guiding students through their first steps in the world of software development. I enjoy combining my technical background with a strong pedagogical approach, always aiming to explain concepts in a clear and accessible way.",
         "p3": "As a frontend developer, my goal is to build modern, responsive, and high-performing websites designed to deliver a seamless and professional user experience. I aim to support individuals, entrepreneurs, and brands looking to enhance their digital presence with clean, reliable, and fully tailored solutions.",
         "skills": "My skills"
+    },
+
+    "services":{
+        "title": "Services & Solutions",
+        "intro": "Here you’ll find the services I offer to enhance your digital presence. Every project is tailored to each client’s needs, combining design, functionality, and performance to deliver professional results.",
+        "card1":{
+            "title": "Landing Page",
+            "p1": "A landing page is a single-section website designed to make an impact and capture the visitor’s attention from the very first moment.",
+            "p2": "It’s ideal for promoting a product, service, or event, or for creating a quick and effective digital presence.",
+            "li1": "✔ Responsive design",
+            "li2": "✔ Smooth and polished animations",
+            "li3": "✔ Basic SEO optimization",
+            "li4": "✔ Integration with social media platforms or WhatsApp",
+            "li5": "✔ Optional hosting and domain",
+            "p3": "💰 From USD 150",
+            "p4": "Interested in a landing page for your business?",
+            "p5": "Have any questions?",
+            "btn": "Reach out on WhatsApp"
+        },
+        "card2":{
+            "title": "Business Website",
+            "p1": "A business website is the digital introduction to your brand or venture.",
+            "p2": "I design modern, clean, and fully responsive websites crafted to reflect your professional identity, build trust, and highlight the best of what you offer.",
+            "p3": "Each project includes a fully custom design (no premade templates), basic SEO optimization, functional forms, and assistance with domain and hosting setup to ensure your website goes live 100% ready, visible, and built to grow.",
+            "p4": "From USD 250",
+            "p5": "Want to enhance your brand’s digital presence?",
+            "p6": "Write to me and I’ll give you guidance with no obligation.",
+            "btn": "Reach out on WhatsApp"
+        },
+        "card3":{
+            "title": "Additional Services",
+            "p1": "I offer maintenance, content updates, redesigns of outdated websites, speed optimization, form integration, and connections to tools like Google Analytics and social media.",
+            "p2": "Designed for those who already have a website but want to improve it or keep it up to date without worrying about the technical side.",
+            "p3": "💰 From USD 40 per individual service",
+            "p4": "Want to improve your website?",
+            "p5": "Tell me what you’re aiming for and I’ll help you out, no obligation.",
+            "btn": "Reach out on WhatsApp"
+        },
+        "accordion":{
+            "title":"How I Work",
+            "intro":"In this section, I explain how I organize each project: from the workflow and payment methods to the final review and the delivery of the fully published website. My goal is to make every stage clear and straightforward, ensuring the final result reflects exactly what you need.",
+            "header1":"1. ⚙️ Work Method",
+            "p1":"Each project is carried out in a fully personalized way, tailored to the client’s needs and goals. Before getting started, we define the scope, content, and delivery timelines.",
+            "header2":"2. 💳 Payment Methods",
+            "p2":"The project is carried out with a 50% upfront payment and the remaining 50% upon completion, before the website is published or the final files are delivered.",
+            "p3":"Payments can be made in Argentine pesos (ARS) at the exchange rate of the day, or in US dollars (USD) through the agreed methods (bank transfer / Mercado Pago).",
+            "header3":"3. 🛠️ Review and Adjustments",
+            "p4":"One or two rounds of minor adjustments are included (depending on the service) once the design or functional version of the website is presented. Changes outside the initial scope can be quoted separately.",
+            "header4":"4. 🌐 Hosting and domain",
+            "p5":"The hosting and domain service can be managed either through the developer or directly by the client. If the hosting is provided by the developer, the corresponding cost of the selected plan will be charged.",
+            "header5":"🚀 Final delivery",
+            "p6":"The final delivery is completed once the full project payment has been made. If the client uses their own hosting, the files are delivered ready to upload. If managed hosting is contracted, the website is published directly."
+        }
     }
-
-
-    
 }
