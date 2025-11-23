@@ -67,5 +67,36 @@
             "header5":"5. 🚀 Entrega final",
             "p6":"La entrega final se realiza una vez abonado el total del proyecto. En caso de hosting propio del cliente, se entregan los archivos listos para subir. Si se contrata hosting administrado, el sitio se publica directamente."
         }
+    },
+
+    "Portfolio":{
+        "title": "Mis proyectos",
+        "intro": "En esta sección vas a encontrar una selección de mis proyectos más destacados. Cada uno refleja mi forma de trabajar: atención al detalle, diseño funcional y enfoque en la experiencia del usuario. Me gusta combinar creatividad y técnica para convertir ideas en soluciones visuales y digitales que realmente funcionan.",
+        "project1":{
+            "title": "Mi portfolio",
+            "description": "Mi portfolio es una colección de proyectos web desarrollados con HTML, CSS y JavaScript, donde muestro mi habilidad para crear sitios web atractivos y funcionales. Cada proyecto exhibe un enfoque único y creativo, demostrando mi capacidad para diseñar y programar experiencias digitales cautivadoras."
+        },
+        "project2":{
+            "title": "A&C Seguros<",
+            "description": "Página web realizada para una PYME que se dedica al rubro del seguro patrimonial."
+        },
+        "project3":{
+            "title": "Nutrición Nutricalu",
+            "description": "Proyecto web realizado para una nutricionista, con varios cambios propuestos a futuro. Esta es una primera versión del sitio."
+        },
+        "project4":{
+            "title": "Proyecto Final UTN",
+            "description": "Proyecto realizado como trabajo final para la materia Laboratorio III, de la Tecnicatura Universitaria en Programación [UTN]. El desarrollo fue realizado íntegramente de manera individual."
+        },
+        "project5":{
+            "title": "Orientacion Informatica",
+            "description": "Página desarrollada para el colegio donde actualmente trabajo como docente, dictando clases de programación web, programación estructurada y programación orientada a objetos."
+        }
+    },
+    "contact":{
+        "title": "¿Tenés un proyecto en mente?",
+        "intro": "Completá el formulario y te respondo a la brevedad. Cuantos más detalles puedas dar, mejor voy a poder ayudarte y enviarte una propuesta acorde a tus necesidades. También podés escribirme directamente por WhatsApp si preferís un contacto más rápido."
     }
+
+
 }

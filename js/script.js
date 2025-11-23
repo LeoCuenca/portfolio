@@ -182,11 +182,6 @@ flagSpa.addEventListener('click', function () {
         flagUsa.classList.toggle('gray');
     }
 
-    if (contactSpa.classList.contains('hidden')) {
-        contactSpa.classList.remove('hidden');
-        contactUsa.classList.toggle('hidden');
-    }
-
     navbar.classList.remove('active');
     menuIcon.classList.remove('bx-x');
 
@@ -197,11 +192,6 @@ flagUsa.addEventListener('click', function () {
     if (flagUsa.classList.contains('gray')) {
         flagUsa.classList.remove('gray');
         flagSpa.classList.toggle('gray');
-    }
-
-    if (contactUsa.classList.contains('hidden')) {
-        contactUsa.classList.remove('hidden');
-        contactSpa.classList.toggle('hidden');
     }
 
     navbar.classList.remove('active');
