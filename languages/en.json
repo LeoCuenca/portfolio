@@ -64,11 +64,11 @@
             "p4":"One or two rounds of minor adjustments are included (depending on the service) once the design or functional version of the website is presented. Changes outside the initial scope can be quoted separately.",
             "header4":"4. 🌐 Hosting and domain",
             "p5":"The hosting and domain service can be managed either through the developer or directly by the client. If the hosting is provided by the developer, the corresponding cost of the selected plan will be charged.",
-            "header5":"🚀 Final delivery",
+            "header5":"5. 🚀 Final delivery",
             "p6":"The final delivery is completed once the full project payment has been made. If the client uses their own hosting, the files are delivered ready to upload. If managed hosting is contracted, the website is published directly."
         }
     },
-    "Portfolio":{
+    "portfolio":{
         "title": "My projects",
         "intro": "In this section, you’ll find a selection of my most notable projects. Each one reflects my way of working: attention to detail, functional design, and a strong focus on user experience. I enjoy combining creativity and technical skill to turn ideas into visual and digital solutions that truly work.",
         "project1":{
@@ -95,5 +95,8 @@
     "contact":{
         "title": "Your next project starts here.",
         "intro": "Fill out the form and I’ll get back to you shortly. The more details you can provide, the better I can help you and prepare a proposal that fits your needs. You can also contact me directly on WhatsApp if you prefer a faster response."
+    },
+    "footer":{
+        "p1": "I personally handled all the development and programming using Visual Studio Code."
     }
 }
