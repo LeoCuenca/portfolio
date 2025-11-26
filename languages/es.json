@@ -28,7 +28,7 @@
             "li3": "✔ Optimización básica para SEO",
             "li4": "✔ Integración con redes sociales o WhatsApp",
             "li5": "✔ Hosting y dominio opcionales",
-            "p3": "💰 Desde USD 150",
+            "p3": "💰 Desde USD 100",
             "p4": "¿Querés una landing para tu negocio?",
             "p5": "¿Tenes alguna duda?",
             "btn": "Hablemos por WhatsApp"
@@ -38,7 +38,7 @@
             "p1": "Un sitio institucional es la carta de presentación digital de tu marca o emprendimiento.",
             "p2": "Diseño sitios modernos, claros y totalmente adaptables, pensados para reflejar tu identidad profesional, transmitir confianza y destacar lo mejor de tu propuesta.",
             "p3": "Cada proyecto incluye un diseño personalizado (sin plantillas prediseñadas), optimización SEO básica, formularios funcionales y asistencia con dominio y hosting para dejar tu sitio 100% online, visible y listo para crecer.",
-            "p4": "💰 Desde USD 250",
+            "p4": "💰 Desde USD 200",
             "p5": "¿Querés mejorar la presencia digital de tu marca?",
             "p6": "Escribime y te asesoro sin compromiso",
             "btn": "Hablemos por WhatsApp"
@@ -95,7 +95,8 @@
     },
     "contact":{
         "title": "¿Tenés un proyecto en mente?",
-        "intro": "Completá el formulario y te respondo a la brevedad. Cuantos más detalles puedas dar, mejor voy a poder ayudarte y enviarte una propuesta acorde a tus necesidades. También podés escribirme directamente por WhatsApp si preferís un contacto más rápido."
+        "intro1": "Completá el formulario y te respondo a la brevedad. Cuantos más detalles puedas dar, mejor voy a poder ayudarte y enviarte una propuesta acorde a tus necesidades. También podés escribirme directamente por ",
+        "intro2": " si preferís un contacto más rápido."
     },
     "footer":{
         "p1": "Desarrollado y programado íntegramente por mí utilizando Visual Studio Code."

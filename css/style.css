@@ -1472,10 +1472,6 @@ body {
         text-align: center;
     }
 
-    .skills{
-        justify-content: center;
-    }
-
     .flip>.front,
     .flip>.back {
         width: 325px;
