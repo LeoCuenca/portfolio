@@ -149,9 +149,9 @@ body {
 }
 
 .go-top-button {
-    position: absolute;     /* ← agregar ESTO */
-    top: 0;                 /* ← pegar arriba del contenedor */
-    left: 0;                /* ← pegar a la izquierda del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 0rem;
     height: 0rem;
     background: #00ccff63;
