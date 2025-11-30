@@ -145,7 +145,7 @@ body {
     width: 3rem;
     height: 3rem;
     z-index: -1;
-    transition: .2s;
+    transition: 2s;
 }
 
 .go-top-button {
@@ -157,8 +157,8 @@ body {
     background: #00ccff63;
     border-radius: 50%;
     cursor: pointer;
-    transform: translate(-35%, -35%);
-    transition: .2s;
+    transform: translate(-45%, -45%);
+    transition: .5s;
     z-index: -1;
 }
 
