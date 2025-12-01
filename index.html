@@ -7,12 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leonel Cuenca | Frontend Dev</title>
-    <!-- Preload de imagen crítica -->
+
+    <!-- Preconnect para el CDN de typed.js -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- Preload de IMAGEN crítica -->
     <link rel="preload" href="./images/background2.png" as="image" />
+
+    <!-- Preload de FUENTES críticas (solo las que se usan arriba del fold) -->
+    <link rel="preload" href="/fonts/ElmsSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ElmsSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Preload de boxicons font (rompe la cadena crítica gigante) -->
+    <link rel="preload" href="/fonts/boxicons.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/favico.png">
+
     <!-- Boxicons local -->
     <link rel="stylesheet" href="./css/boxicons.min.css" />
-    <!-- TU CSS general (idealmente minificado y unificado) -->
+
+    <!-- CSS general -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -54,11 +69,11 @@
     
     <section class="home" id="home">
         <div class="social-bar">
-            <a href="#" target="_blank" class="">
+            <a href="https://github.com/LeoCuenca" target="_blank" class="">
                 <img src="./images/gh.png" alt="GitHub">
             </a>
-            <a href="#" target="_blank" class="">
-                <img src="./images/linkedin.png" alt="Linkedin">
+            <a href="https://www.linkedin.com/in/leo-cuenca/" target="_blank" class="">
+                <img src="./images/linkedin.png" alt="LinkedIn">
             </a>
             <a href="#" target="_blank" class="">
                 <img src="./images/spotify.png" alt="Spotify">
@@ -66,7 +81,7 @@
             <a href="#" target="_blank" class="">
                 <img src="./images/ig.png" alt="Instagram">
             </a>
-            <a href="#" target="_blank" class="">
+            <a href="https://wa.me/541134417767?text=" target="_blank" class="">
                 <img src="./images/wsp.png" alt="WhatsApp">
             </a>
         </div>
@@ -477,10 +492,10 @@
             <p>&copy; Leonel Cuenca 👨🏻‍💻⚡️</p>
         </div>
         <div class="menu-footer">
-            <a href="#" target="_blank" class="">
+            <a href="https://github.com/LeoCuenca" target="_blank" class="">
                 <img src="./images/gh.png" alt="GitHub">
             </a>
-            <a href="#" target="_blank" class="">
+            <a href="https://www.linkedin.com/in/leo-cuenca/" target="_blank" class="">
                 <img src="./images/linkedin.png" alt="LinkedIn">
             </a>
             <a href="#" target="_blank" class="">
@@ -489,20 +504,20 @@
             <a href="#" target="_blank" class="">
                 <img src="./images/ig.png" alt="Instagram">
             </a>
-            <a href="#" target="_blank" class="">
+            <a href="https://wa.me/541134417767?text=" target="_blank" class="">
                 <img src="./images/wsp.png" alt="WhatsApp">
             </a>
         </div>
     </footer>
 
     <!-- Scroll Reveal -->
-     <script src="./js/scrollreveal.min.js"></script>
+     <script src="./js/scrollreveal.min.js" defer></script>
 
     <!-- Typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
 
     <!-- Custom js -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
 </body>
 
